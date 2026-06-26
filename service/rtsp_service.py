@@ -1,3 +1,7 @@
+import logging
+# Tạo logger cục bộ cho file này (nó sẽ tự thừa kế cấu hình Root ở app.py / main.py)
+logger = logging.getLogger(__name__)
+
 import cv2
 import time
 import threading

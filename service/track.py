@@ -1,4 +1,6 @@
-
+import logging
+# Tạo logger cục bộ cho file này (nó sẽ tự thừa kế cấu hình Root ở app.py / main.py)
+logger = logging.getLogger(__name__)
 
 import cv2
 import zmq
@@ -20,11 +22,11 @@ def _zmq_listener(tracker):
                 name = msg["name"]
                 if name not in tracker.pending_targets:
                     tracker.pending_targets.append(name)
-                    print(f"[TRACK] Target added: {name} — queue size: {len(tracker.pending_targets)}")
+                    logger.debug(f"[TRACK] Target added: {name} — queue size: {len(tracker.pending_targets)}")
                 else:
-                    print(f"[TRACK] Target skipped (already pending): {name}")
+                    logger.debug(f"[TRACK] Target skipped (already pending): {name}")
         except Exception as e:
-            print(f"[TRACK] ZMQ error: {e}")
+            logger.error(f"[TRACK] ZMQ error: {e}")
 
 
 def main():

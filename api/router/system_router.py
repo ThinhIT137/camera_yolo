@@ -1,3 +1,7 @@
+import logging
+# Tạo logger cục bộ cho file này (nó sẽ tự thừa kế cấu hình Root ở app.py / main.py)
+logger = logging.getLogger(__name__)
+
 import os
 from fastapi import APIRouter
 from pydantic import BaseModel
@@ -31,13 +35,13 @@ def api_update_master_url(payload: UpdateMasterPayload):
         set_key(ENV_PATH, "MASTER_URL", new_url)
         set_key(ENV_PATH, "SERVER_ID", new_id) # Ghi thêm dòng Server ID vào .env
         
-        print(f"\n🔄 [CẬP NHẬT] Nhận lệnh từ Master! Đổi đích: {new_url} | ID: {new_id}\n")
+        logger.debug(f"\n🔄 [CẬP NHẬT] Nhận lệnh từ Master! Đổi đích: {new_url} | ID: {new_id}\n")
         return {
             "status": "success", 
             "message": f"Dạ em đã cập nhật. URL: {new_url}, ID: {new_id}"
         }
     except Exception as e:
-        print(f"❌ [LỖI WORKER] Không thể ghi file .env: {e}")
+        logger.error(f"❌ [LỖI WORKER] Không thể ghi file .env: {e}")
         return {
             "status": "error", 
             "message": f"Không thể ghi đè file .env: {e}"

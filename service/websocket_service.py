@@ -1,3 +1,7 @@
+import logging
+# Tạo logger cục bộ cho file này (nó sẽ tự thừa kế cấu hình Root ở app.py / main.py)
+logger = logging.getLogger(__name__)
+
 import asyncio
 from fastapi import WebSocket
 
@@ -29,7 +33,7 @@ manager = ConnectionManager()
 
 def queue_to_websocket(loop, q):
     """Luồng ngầm đọc tọa độ từ Queue và bơm thẳng ra WebSocket"""
-    print("🚀 Đã khởi động trạm trung chuyển Queue -> WebSocket")
+    logger.info("🚀 Đã khởi động trạm trung chuyển Queue -> WebSocket")
     while True:
         try:
             data = q.get() 
@@ -37,4 +41,4 @@ def queue_to_websocket(loop, q):
                 cam_id = data.get("cam_id")
                 asyncio.run_coroutine_threadsafe(manager.broadcast(data, cam_id), loop)
         except Exception as e: 
-            print(f"⚠️ Lỗi trung chuyển WebSocket: {e}")
+            logger.error(f"⚠️ Lỗi trung chuyển WebSocket: {e}")

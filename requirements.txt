@@ -1,0 +1,6 @@
+flask>=3.0
+opencv-python>=4.8
+numpy>=1.24
+pyzmq>=25.0
+psutil>=5.9
+zeroconf>=0.132.0

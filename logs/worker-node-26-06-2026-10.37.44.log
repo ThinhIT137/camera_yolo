@@ -1,0 +1,16 @@
+2026-06-26 10:37:44 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 10:37:51 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-06-26 10:37:51 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-06-26 10:37:51 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-06-26 10:37:51 | INFO     | loader:156 | Loading faiss.
+2026-06-26 10:37:51 | INFO     | loader:158 | Successfully loaded faiss.
+2026-06-26 10:37:51 | CRITICAL | logger_utils:63 | 🚨 [HỆ THỐNG SẬP NGUỒN ĐỘT NGỘT] Lỗi chưa được xử lý:
+Traceback (most recent call last):
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\main.py", line 25, in <module>
+    from api.router import cameras_router, websocket_router, system_router
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\api\router\cameras_router.py", line 10, in <module>
+    from service.yolo_service import ai_worker_process, calculate_optimal_chunk_size
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\service\yolo_service.py", line 12, in <module>
+    from service.tracker import PersonTracker
+ImportError: cannot import name 'PersonTracker' from 'service.tracker' (E:\FullStack_developer\projects\camera\Backend\camera_jolo\service\tracker.py)

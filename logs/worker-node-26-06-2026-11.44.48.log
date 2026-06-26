@@ -1,0 +1,498 @@
+2026-06-26 11:44:48 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:44:53 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:44:53 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:44:53 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:44:53 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:44:53 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:44:53 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:44:58 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-06-26 11:44:58 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-06-26 11:44:58 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-06-26 11:44:58 | INFO     | loader:156 | Loading faiss.
+2026-06-26 11:44:58 | INFO     | loader:158 | Successfully loaded faiss.
+2026-06-26 11:45:02 | INFO     | main:64 | 
+=======================================================
+2026-06-26 11:45:02 | INFO     | main:65 | 🤖 WORKER YOLO AI ĐÃ SẴN SÀNG - ĐANG CHỜ MASTER GIAO VIỆC
+2026-06-26 11:45:02 | INFO     | main:66 | =======================================================
+
+2026-06-26 11:45:02 | DEBUG    | proactor_events:634 | Using proactor: IocpProactor
+2026-06-26 11:45:02 | INFO     | websocket_service:36 | 🚀 Đã khởi động trạm trung chuyển Queue -> WebSocket
+2026-06-26 11:45:02 | INFO     | heartbeat_service:61 | 💓 [Heartbeat Service] Đã kích hoạt máy đo nhịp tim chạy ngầm...
+2026-06-26 11:45:03 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 22.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:45:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:45:03 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:45:07 | DEBUG    | cameras_router:37 | 
+🛑 Nhận lệnh Sync từ Master! Đang dọn dẹp 0 luồng YOLO cũ...
+2026-06-26 11:45:09 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 19.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:45:09 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:45:09 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_001 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:09 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:45:10 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_002 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:11 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_004 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:14 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_006 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:15 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 16.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:45:15 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:45:15 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:45:16 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_008 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:19 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_010 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:21 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 28.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:45:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:45:21 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:45:21 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_012 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:24 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_005 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:26 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_009 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:27 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 18.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:45:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:45:27 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:45:27 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_003 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:30 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_011 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:32 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_007 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:32 | DEBUG    | yolo_service:144 | 🧠 [AUTO-SCALE] VRAM 3.6GB | Phân bổ tối ưu: 6 Cam / 1 YOLO
+2026-06-26 11:45:32 | DEBUG    | cameras_router:25 | 🚀 BẮT ĐẦU CHIA LÔ CHO 12 CAMERA (Tối ưu: 6 Cam/1 YOLO) 🚀
+2026-06-26 11:45:33 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:45:33 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 23.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:45:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:45:33 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:45:36 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:45:36 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:45:36 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:45:36 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:45:36 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:45:36 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:45:39 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:45:39 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-06-26 11:45:39 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-06-26 11:45:39 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-06-26 11:45:39 | INFO     | loader:156 | Loading faiss.
+2026-06-26 11:45:39 | INFO     | loader:158 | Successfully loaded faiss.
+2026-06-26 11:45:39 | INFO     | yolo_service:42 | ⚙️ [YOLO SỐ 1] TIẾP NHẬN LÔ: ['cam_001', 'cam_002', 'cam_004', 'cam_006', 'cam_008', 'cam_010'] - ÉP SỬ DỤNG GPU TRƠN TRU
+2026-06-26 11:45:39 | DEBUG    | yolo_service:45 | ⚙️ [CPU hay GPU] Server đang chạy yolo bằng: cuda:0
+2026-06-26 11:45:39 | INFO     | yolo_service:51 | ✅ [YOLO SỐ 1] Đã nạp thành công ReIDGallery lên GPU.
+2026-06-26 11:45:39 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_001 đang chạy trên: cuda:0
+2026-06-26 11:45:39 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_001
+2026-06-26 11:45:39 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_002 đang chạy trên: cuda:0
+2026-06-26 11:45:39 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_002
+2026-06-26 11:45:39 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_004 đang chạy trên: cuda:0
+2026-06-26 11:45:39 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_004
+2026-06-26 11:45:39 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 29.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:45:39 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:45:39 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:45:39 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_006 đang chạy trên: cuda:0
+2026-06-26 11:45:40 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_006
+2026-06-26 11:45:40 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_008 đang chạy trên: cuda:0
+2026-06-26 11:45:40 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_008
+2026-06-26 11:45:40 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_010 đang chạy trên: cuda:0
+2026-06-26 11:45:40 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_010
+2026-06-26 11:45:42 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:45:42 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:45:42 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:45:42 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:45:42 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:45:42 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:45:43 | DEBUG    | cameras_router:37 | 
+🛑 Nhận lệnh Sync từ Master! Đang dọn dẹp 2 luồng YOLO cũ...
+2026-06-26 11:45:45 | INFO     | cameras_router:33 | ✅ Đã khởi động xong toàn bộ luồng YOLO!
+2026-06-26 11:45:45 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_001 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:46 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 32.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:45:46 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:45:46 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:45:46 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_002 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:47 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_004 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:50 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_007 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:52 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 25.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:45:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:45:52 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:45:52 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_009 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:54 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_011 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:57 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_013 - Luồng hình ảnh ổn định.
+2026-06-26 11:45:58 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 23.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:45:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:45:58 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:46:00 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_015 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:01 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_017 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:03 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_019 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:04 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 21.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:46:04 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:46:04 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:46:05 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_021 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:06 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_023 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:07 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_003 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:10 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_006 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:10 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 17.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:46:10 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:46:10 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:46:12 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_010 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:15 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_014 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:16 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 20.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:46:16 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:46:16 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:46:17 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_018 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:18 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_024 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:21 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_008 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:22 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_016 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:22 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 20.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:46:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:46:22 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:46:23 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_022 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:26 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_012 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:28 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 35.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:46:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:46:28 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:46:28 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_005 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:30 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_020 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:30 | DEBUG    | yolo_service:144 | 🧠 [AUTO-SCALE] VRAM 3.6GB | Phân bổ tối ưu: 6 Cam / 1 YOLO
+2026-06-26 11:46:30 | DEBUG    | cameras_router:25 | 🚀 BẮT ĐẦU CHIA LÔ CHO 24 CAMERA (Tối ưu: 6 Cam/1 YOLO) 🚀
+2026-06-26 11:46:30 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:46:33 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:46:33 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:46:33 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:46:33 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:46:33 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:46:33 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:46:34 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 27.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:46:34 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:46:34 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:46:36 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:46:36 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-06-26 11:46:36 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-06-26 11:46:36 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-06-26 11:46:36 | INFO     | loader:156 | Loading faiss.
+2026-06-26 11:46:36 | INFO     | loader:158 | Successfully loaded faiss.
+2026-06-26 11:46:36 | INFO     | yolo_service:42 | ⚙️ [YOLO SỐ 1] TIẾP NHẬN LÔ: ['cam_001', 'cam_002', 'cam_004', 'cam_007', 'cam_009', 'cam_011'] - ÉP SỬ DỤNG GPU TRƠN TRU
+2026-06-26 11:46:36 | DEBUG    | yolo_service:45 | ⚙️ [CPU hay GPU] Server đang chạy yolo bằng: cuda:0
+2026-06-26 11:46:37 | INFO     | yolo_service:51 | ✅ [YOLO SỐ 1] Đã nạp thành công ReIDGallery lên GPU.
+2026-06-26 11:46:37 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_001 đang chạy trên: cuda:0
+2026-06-26 11:46:37 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_001
+2026-06-26 11:46:37 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_002 đang chạy trên: cuda:0
+2026-06-26 11:46:37 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_002
+2026-06-26 11:46:37 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_004 đang chạy trên: cuda:0
+2026-06-26 11:46:37 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_004
+2026-06-26 11:46:37 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_007 đang chạy trên: cuda:0
+2026-06-26 11:46:37 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_007
+2026-06-26 11:46:37 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_009 đang chạy trên: cuda:0
+2026-06-26 11:46:37 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_009
+2026-06-26 11:46:37 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_011 đang chạy trên: cuda:0
+2026-06-26 11:46:37 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_011
+2026-06-26 11:46:40 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:46:40 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:46:40 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:46:40 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:46:40 | DEBUG    | cameras_router:37 | 
+🛑 Nhận lệnh Sync từ Master! Đang dọn dẹp 2 luồng YOLO cũ...
+2026-06-26 11:46:41 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 61.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.5}
+2026-06-26 11:46:41 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:46:41 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:46:42 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:46:42 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_001 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:43 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_002 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:44 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_004 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:45 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:46:45 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:46:45 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:46:45 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:46:46 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:46:46 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:46:46 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_006 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:47 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 35.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:46:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:46:47 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:46:48 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:46:48 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-06-26 11:46:48 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-06-26 11:46:48 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-06-26 11:46:48 | INFO     | loader:156 | Loading faiss.
+2026-06-26 11:46:48 | INFO     | loader:158 | Successfully loaded faiss.
+2026-06-26 11:46:48 | INFO     | yolo_service:42 | ⚙️ [YOLO SỐ 3] TIẾP NHẬN LÔ: ['cam_003', 'cam_006', 'cam_010', 'cam_014', 'cam_018', 'cam_024'] - ÉP SỬ DỤNG GPU TRƠN TRU
+2026-06-26 11:46:48 | DEBUG    | yolo_service:45 | ⚙️ [CPU hay GPU] Server đang chạy yolo bằng: cuda:0
+2026-06-26 11:46:48 | INFO     | yolo_service:51 | ✅ [YOLO SỐ 3] Đã nạp thành công ReIDGallery lên GPU.
+2026-06-26 11:46:48 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_003 đang chạy trên: cuda:0
+2026-06-26 11:46:48 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_003
+2026-06-26 11:46:48 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_006 đang chạy trên: cuda:0
+2026-06-26 11:46:48 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_006
+2026-06-26 11:46:49 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_010 đang chạy trên: cuda:0
+2026-06-26 11:46:49 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_010
+2026-06-26 11:46:49 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_014 đang chạy trên: cuda:0
+2026-06-26 11:46:49 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_014
+2026-06-26 11:46:49 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_018 đang chạy trên: cuda:0
+2026-06-26 11:46:49 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_018
+2026-06-26 11:46:49 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_024 đang chạy trên: cuda:0
+2026-06-26 11:46:49 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_024
+2026-06-26 11:46:49 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_008 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:51 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:46:51 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:46:51 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:46:51 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:46:51 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:46:51 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:46:52 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_010 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:53 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 36.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.5}
+2026-06-26 11:46:53 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:46:53 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:46:54 | INFO     | cameras_router:33 | ✅ Đã khởi động xong toàn bộ luồng YOLO!
+2026-06-26 11:46:54 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_012 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:54 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-06-26 11:46:54 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-06-26 11:46:54 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-06-26 11:46:54 | INFO     | loader:156 | Loading faiss.
+2026-06-26 11:46:54 | INFO     | loader:158 | Successfully loaded faiss.
+2026-06-26 11:46:54 | INFO     | yolo_service:42 | ⚙️ [YOLO SỐ 4] TIẾP NHẬN LÔ: ['cam_008', 'cam_016', 'cam_022', 'cam_012', 'cam_005', 'cam_020'] - ÉP SỬ DỤNG GPU TRƠN TRU
+2026-06-26 11:46:54 | DEBUG    | yolo_service:45 | ⚙️ [CPU hay GPU] Server đang chạy yolo bằng: cuda:0
+2026-06-26 11:46:55 | INFO     | yolo_service:51 | ✅ [YOLO SỐ 4] Đã nạp thành công ReIDGallery lên GPU.
+2026-06-26 11:46:55 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_008 đang chạy trên: cuda:0
+2026-06-26 11:46:55 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_008
+2026-06-26 11:46:55 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_016 đang chạy trên: cuda:0
+2026-06-26 11:46:55 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_016
+2026-06-26 11:46:55 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_022 đang chạy trên: cuda:0
+2026-06-26 11:46:55 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_022
+2026-06-26 11:46:55 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_012 đang chạy trên: cuda:0
+2026-06-26 11:46:55 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_012
+2026-06-26 11:46:55 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_005 đang chạy trên: cuda:0
+2026-06-26 11:46:55 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_005
+2026-06-26 11:46:55 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_020 đang chạy trên: cuda:0
+2026-06-26 11:46:55 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_020
+2026-06-26 11:46:57 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_014 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:58 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_016 - Luồng hình ảnh ổn định.
+2026-06-26 11:46:59 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 43.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.35}
+2026-06-26 11:46:59 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:46:59 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:47:00 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_018 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:02 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_020 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:03 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_023 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:05 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 26.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.35}
+2026-06-26 11:47:05 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:47:05 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:47:05 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_025 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:07 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_027 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:08 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_029 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:09 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_032 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:10 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_034 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:11 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 32.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.35}
+2026-06-26 11:47:11 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:47:11 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:47:12 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_036 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:14 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_005 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:17 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_009 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:17 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 28.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.35}
+2026-06-26 11:47:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:47:17 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:47:19 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_013 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:20 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_017 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:22 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_021 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:23 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_022 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:23 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 34.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.35}
+2026-06-26 11:47:23 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:47:23 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:47:24 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_026 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:25 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_030 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:27 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_033 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:28 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_003 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:29 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 29.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.35}
+2026-06-26 11:47:29 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:47:29 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:47:30 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_011 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:33 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_019 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:34 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_028 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:35 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 39.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.35}
+2026-06-26 11:47:35 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:47:35 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:47:36 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_035 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:38 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_015 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:39 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_031 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:41 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 18.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.35}
+2026-06-26 11:47:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:47:42 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:47:42 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_007 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:43 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_024 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:43 | DEBUG    | yolo_service:144 | 🧠 [AUTO-SCALE] VRAM 3.4GB | Phân bổ tối ưu: 6 Cam / 1 YOLO
+2026-06-26 11:47:43 | DEBUG    | cameras_router:25 | 🚀 BẮT ĐẦU CHIA LÔ CHO 36 CAMERA (Tối ưu: 6 Cam/1 YOLO) 🚀
+2026-06-26 11:47:43 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:47:47 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:47:47 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:47:47 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:47:47 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:47:47 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:47:47 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:47:48 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 26.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.35}
+2026-06-26 11:47:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:47:48 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:47:49 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:47:50 | DEBUG    | cameras_router:37 | 
+🛑 Nhận lệnh Sync từ Master! Đang dọn dẹp 4 luồng YOLO cũ...
+2026-06-26 11:47:52 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_001 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:53 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_002 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:54 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 24.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:47:54 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:47:54 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:47:54 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_004 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:55 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:47:57 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_006 - Luồng hình ảnh ổn định.
+2026-06-26 11:47:59 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:47:59 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:47:59 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:47:59 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:47:59 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:47:59 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:47:59 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_008 - Luồng hình ảnh ổn định.
+2026-06-26 11:48:00 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 29.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.64}
+2026-06-26 11:48:00 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:48:00 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:48:01 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:48:02 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_010 - Luồng hình ảnh ổn định.
+2026-06-26 11:48:03 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-06-26 11:48:03 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-06-26 11:48:03 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-06-26 11:48:03 | INFO     | loader:156 | Loading faiss.
+2026-06-26 11:48:03 | INFO     | loader:158 | Successfully loaded faiss.
+2026-06-26 11:48:03 | INFO     | yolo_service:42 | ⚙️ [YOLO SỐ 3] TIẾP NHẬN LÔ: ['cam_025', 'cam_027', 'cam_029', 'cam_032', 'cam_034', 'cam_036'] - ÉP SỬ DỤNG GPU TRƠN TRU
+2026-06-26 11:48:03 | DEBUG    | yolo_service:45 | ⚙️ [CPU hay GPU] Server đang chạy yolo bằng: cuda:0
+2026-06-26 11:48:03 | INFO     | yolo_service:51 | ✅ [YOLO SỐ 3] Đã nạp thành công ReIDGallery lên GPU.
+2026-06-26 11:48:03 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_025 đang chạy trên: cuda:0
+2026-06-26 11:48:03 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_025
+2026-06-26 11:48:03 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_027 đang chạy trên: cuda:0
+2026-06-26 11:48:03 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_027
+2026-06-26 11:48:04 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_029 đang chạy trên: cuda:0
+2026-06-26 11:48:04 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_029
+2026-06-26 11:48:04 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_032 đang chạy trên: cuda:0
+2026-06-26 11:48:04 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_032
+2026-06-26 11:48:04 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_034 đang chạy trên: cuda:0
+2026-06-26 11:48:04 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_034
+2026-06-26 11:48:04 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_036 đang chạy trên: cuda:0
+2026-06-26 11:48:04 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_036
+2026-06-26 11:48:04 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_005 - Luồng hình ảnh ổn định.
+2026-06-26 11:48:05 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:48:05 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:48:05 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:48:05 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:48:05 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:48:05 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:48:06 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 35.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.5}
+2026-06-26 11:48:06 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:48:06 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:48:07 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_009 - Luồng hình ảnh ổn định.
+2026-06-26 11:48:07 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:48:08 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_003 - Luồng hình ảnh ổn định.
+2026-06-26 11:48:08 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-06-26 11:48:08 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-06-26 11:48:08 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-06-26 11:48:08 | INFO     | loader:156 | Loading faiss.
+2026-06-26 11:48:08 | INFO     | loader:158 | Successfully loaded faiss.
+2026-06-26 11:48:08 | INFO     | yolo_service:42 | ⚙️ [YOLO SỐ 4] TIẾP NHẬN LÔ: ['cam_005', 'cam_009', 'cam_013', 'cam_017', 'cam_021', 'cam_022'] - ÉP SỬ DỤNG GPU TRƠN TRU
+2026-06-26 11:48:08 | DEBUG    | yolo_service:45 | ⚙️ [CPU hay GPU] Server đang chạy yolo bằng: cuda:0
+2026-06-26 11:48:09 | INFO     | yolo_service:51 | ✅ [YOLO SỐ 4] Đã nạp thành công ReIDGallery lên GPU.
+2026-06-26 11:48:09 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_005 đang chạy trên: cuda:0
+2026-06-26 11:48:09 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_005
+2026-06-26 11:48:09 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_009 đang chạy trên: cuda:0
+2026-06-26 11:48:09 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_009
+2026-06-26 11:48:09 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_013 đang chạy trên: cuda:0
+2026-06-26 11:48:09 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_013
+2026-06-26 11:48:09 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_017 đang chạy trên: cuda:0
+2026-06-26 11:48:09 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_017
+2026-06-26 11:48:09 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_021 đang chạy trên: cuda:0
+2026-06-26 11:48:09 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_021
+2026-06-26 11:48:09 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_022 đang chạy trên: cuda:0
+2026-06-26 11:48:09 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_022
+2026-06-26 11:48:11 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_011 - Luồng hình ảnh ổn định.
+2026-06-26 11:48:11 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:48:11 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:48:11 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:48:11 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:48:11 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:48:11 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:48:12 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 20.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.35}
+2026-06-26 11:48:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:48:12 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:48:13 | DEBUG    | cameras_router:67 | ✅ [OK] Camera cam_007 - Luồng hình ảnh ổn định.
+2026-06-26 11:48:13 | DEBUG    | yolo_service:144 | 🧠 [AUTO-SCALE] VRAM 3.4GB | Phân bổ tối ưu: 6 Cam / 1 YOLO
+2026-06-26 11:48:13 | DEBUG    | cameras_router:25 | 🚀 BẮT ĐẦU CHIA LÔ CHO 11 CAMERA (Tối ưu: 6 Cam/1 YOLO) 🚀
+2026-06-26 11:48:13 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:48:13 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:48:13 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-06-26 11:48:13 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-06-26 11:48:13 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-06-26 11:48:13 | INFO     | loader:156 | Loading faiss.
+2026-06-26 11:48:13 | INFO     | loader:158 | Successfully loaded faiss.
+2026-06-26 11:48:14 | INFO     | yolo_service:42 | ⚙️ [YOLO SỐ 5] TIẾP NHẬN LÔ: ['cam_026', 'cam_030', 'cam_033', 'cam_003', 'cam_011', 'cam_019'] - ÉP SỬ DỤNG GPU TRƠN TRU
+2026-06-26 11:48:14 | DEBUG    | yolo_service:45 | ⚙️ [CPU hay GPU] Server đang chạy yolo bằng: cuda:0
+2026-06-26 11:48:14 | INFO     | yolo_service:51 | ✅ [YOLO SỐ 5] Đã nạp thành công ReIDGallery lên GPU.
+2026-06-26 11:48:14 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_026 đang chạy trên: cuda:0
+2026-06-26 11:48:14 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_026
+2026-06-26 11:48:14 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_030 đang chạy trên: cuda:0
+2026-06-26 11:48:14 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_030
+2026-06-26 11:48:14 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_033 đang chạy trên: cuda:0
+2026-06-26 11:48:14 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_033
+2026-06-26 11:48:14 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_003 đang chạy trên: cuda:0
+2026-06-26 11:48:14 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_003
+2026-06-26 11:48:14 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_011 đang chạy trên: cuda:0
+2026-06-26 11:48:14 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_011
+2026-06-26 11:48:14 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_019 đang chạy trên: cuda:0
+2026-06-26 11:48:14 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_019
+2026-06-26 11:48:16 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:48:16 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:48:16 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:48:16 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:48:17 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:48:17 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:48:17 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-06-26 11:48:17 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:48:17 | DEBUG    | __init__:1511 | interactive is False
+2026-06-26 11:48:17 | DEBUG    | __init__:1512 | platform is win32
+2026-06-26 11:48:17 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-06-26 11:48:17 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-06-26 11:48:18 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 31.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.2}
+2026-06-26 11:48:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:48:18 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-06-26 11:48:19 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-06-26 11:48:19 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-06-26 11:48:19 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-06-26 11:48:19 | INFO     | loader:156 | Loading faiss.
+2026-06-26 11:48:19 | INFO     | loader:158 | Successfully loaded faiss.
+2026-06-26 11:48:19 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-06-26 11:48:19 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-06-26 11:48:19 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-06-26 11:48:19 | INFO     | loader:156 | Loading faiss.
+2026-06-26 11:48:19 | INFO     | loader:158 | Successfully loaded faiss.
+2026-06-26 11:48:19 | INFO     | yolo_service:42 | ⚙️ [YOLO SỐ 1] TIẾP NHẬN LÔ: ['cam_001', 'cam_002', 'cam_004', 'cam_006', 'cam_008', 'cam_010'] - ÉP SỬ DỤNG GPU TRƠN TRU
+2026-06-26 11:48:19 | DEBUG    | yolo_service:45 | ⚙️ [CPU hay GPU] Server đang chạy yolo bằng: cuda:0
+2026-06-26 11:48:19 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 11:48:19 | INFO     | yolo_service:42 | ⚙️ [YOLO SỐ 6] TIẾP NHẬN LÔ: ['cam_028', 'cam_035', 'cam_015', 'cam_031', 'cam_007', 'cam_024'] - ÉP SỬ DỤNG GPU TRƠN TRU
+2026-06-26 11:48:19 | INFO     | cameras_router:33 | ✅ Đã khởi động xong toàn bộ luồng YOLO!
+2026-06-26 11:48:19 | DEBUG    | yolo_service:45 | ⚙️ [CPU hay GPU] Server đang chạy yolo bằng: cuda:0
+2026-06-26 11:48:19 | INFO     | yolo_service:51 | ✅ [YOLO SỐ 1] Đã nạp thành công ReIDGallery lên GPU.
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_001 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_001
+2026-06-26 11:48:20 | INFO     | yolo_service:51 | ✅ [YOLO SỐ 6] Đã nạp thành công ReIDGallery lên GPU.
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_002 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_002
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_028 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_028
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_035 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_035
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_004 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_004
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_015 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_015
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_006 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_006
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_031 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_031
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_008 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_008
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_007 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_007
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_010 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_010
+2026-06-26 11:48:20 | INFO     | yolo_service:59 | 🤖 [CHECK GPU] YOLO của cam_024 đang chạy trên: cuda:0
+2026-06-26 11:48:20 | INFO     | yolo_service:84 | 🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho cam_024
+2026-06-26 11:48:24 | DEBUG    | heartbeat_service:51 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_001', 'cpu_usage': 31.4, 'has_gpu': False, 'gpu_usage': 0, 'vram_free_gb': 0.0}
+2026-06-26 11:48:24 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-06-26 11:48:25 | INFO     | cameras_router:33 | ✅ Đã khởi động xong toàn bộ luồng YOLO!

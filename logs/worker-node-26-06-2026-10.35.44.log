@@ -1,0 +1,12 @@
+2026-06-26 10:35:44 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 10:35:47 | CRITICAL | logger_utils:63 | 🚨 [HỆ THỐNG SẬP NGUỒN ĐỘT NGỘT] Lỗi chưa được xử lý:
+Traceback (most recent call last):
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\main.py", line 25, in <module>
+    from api.router import cameras_router, websocket_router, system_router
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\api\router\cameras_router.py", line 10, in <module>
+    from service.yolo_service import ai_worker_process, calculate_optimal_chunk_size
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\service\yolo_service.py", line 12, in <module>
+    from service.tracker import PersonTracker
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\service\tracker.py", line 5, in <module>
+    from gallery import ReIDGallery
+ModuleNotFoundError: No module named 'gallery'

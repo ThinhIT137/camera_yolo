@@ -1,12 +1,21 @@
+import logging
+# Tạo logger cục bộ cho file này (nó sẽ tự thừa kế cấu hình Root ở app.py / main.py)
+logger = logging.getLogger(__name__)
+
 import os
 import time
 import zmq
 import threading
 import torch
 import math
+import subprocess
+import numpy as np
 from service.rtsp_service import check_rtsp_alive, ReconnectWatcher
-from service.tracker import PersonTracker
 import multiprocessing
+from ultralytics import YOLO
+from service.gallery import ReIDGallery
+from service.tracker import CameraTracker
+
 from service.state import (
     active_processes, 
     active_cameras_data, 
@@ -27,82 +36,59 @@ def zmq_listener(tracker_app):
         except Exception: pass
 
 def ai_worker_process(chunk_id, cameras_chunk, out_queue):
-    print(f"\n⚙️ [YOLO SỐ {chunk_id}] TIẾP NHẬN LÔ: {list(cameras_chunk.keys())} - SỬ DỤNG GPU ĐỂ TRACKING")
-    
-    tracker_app = PersonTracker(model_path="yolo11s.pt", reid_weights="osnet_x1_0_msmt17.pth")
-    threading.Thread(target=zmq_listener, args=(tracker_app,), daemon=True).start()
-    
-    while True:
-        alive_chunk = {}
-        dead_chunk = {}
-        
-        for cam_id, url in cameras_chunk.items():
-            if check_rtsp_alive(url): alive_chunk[cam_id] = url
-            else: 
-                dead_chunk[cam_id] = url
-                print(f"⚠️ [YOLO SỐ {chunk_id}] {cam_id} MẤT KẾT NỐI. Đang chờ phục hồi...")
-                
-        if not alive_chunk:
-            print(f"💀 [YOLO SỐ {chunk_id}] Toàn bộ Lô mất tín hiệu. Đợi 2s check lại...")
-            time.sleep(2)
-            continue 
+    """
+    Tiến trình công nhân AI: Gánh một lô camera.
+    """
+    logger.info(f"⚙️ [YOLO SỐ {chunk_id}] TIẾP NHẬN LÔ: {list(cameras_chunk.keys())} - ÉP SỬ DỤNG GPU TRƠN TRU")
+    try:
+        device = "cuda:0" if torch.cuda.is_available() else "cpu"
+        logger.debug(f"⚙️ [CPU hay GPU] Server đang chạy yolo bằng: {device}")
+        # 🌟 1. KHỞI TẠO DUY NHẤT 1 BỘ REID GALLERY DÙNG CHUNG
+        # Để các camera chia sẻ trí nhớ khuôn mặt cho nhau
+        gallery = ReIDGallery(reid_weights="osnet_x1_0_msmt17.pth")
+        if hasattr(gallery, 'reid_model') and "cuda" in device:
+            gallery.reid_model = gallery.reid_model.cuda()
+        logger.info(f"✅ [YOLO SỐ {chunk_id}] Đã nạp thành công ReIDGallery lên GPU.")
+        threads = []
+        for cam_id, stream_url in cameras_chunk.items():
+            roi = (0, 0, 1920, 1080)
+            door_poly = np.array([[0, 0], [1920, 0], [1920, 1080], [0, 1080]], dtype=np.int32)
+            # 🔥 2. MỖI CAMERA TỰ KHỞI TẠO 1 BẢN SAO YOLO RIÊNG (Nhưng nằm chung Process nên xài chung CUDA Context, siêu tiết kiệm VRAM)
+            yolo_model = YOLO("yolo11s.pt", task="detect")
+            yolo_model.to(device)
+            logger.info(f"🤖 [CHECK GPU] YOLO của {cam_id} đang chạy trên: {yolo_model.device}")
             
-        stream_file = f"streams_chunk_{chunk_id}.streams"
-        url_to_cam_id = {} 
-        with open(stream_file, "w") as f:
-            for cam_id, url in alive_chunk.items():
-                f.write(url + "\n")
-                url_to_cam_id[url] = cam_id
-                normalized_url = url.replace(":", "_")
-                url_to_cam_id[normalized_url] = cam_id
+            # 3. Gắn YOLO riêng và Gallery chung vào Tracker
+            tracker_instance = CameraTracker(
+                cam_id=cam_id,
+                source_url=stream_url,
+                gallery=gallery,
+                yolo_model=yolo_model, # <--- Giờ mỗi cam ôm 1 con YOLO độc lập, không sợ đá ID của nhau
+                roi=roi,
+                door_poly=door_poly,
+                tracker_config="custom_tracker.yaml"
+            )
+            
+            tracker_instance.out_queue = out_queue
+            
+            target_method = None
+            for method_name in ['start', 'run', 'start_tracking', 'track_loop']:
+                if hasattr(tracker_instance, method_name):
+                    target_method = getattr(tracker_instance, method_name)
+                    break
+            
+            if target_method:
+                t = threading.Thread(target=target_method, daemon=True)
+                t.start()
+                threads.append(t)
+                logger.info(f"🚀 [SUCCESS] Đã kích hoạt luồng AI chạy ngầm cho {cam_id}")
 
-        frame_counters = {cam_id: 0 for cam_id in alive_chunk.keys()}
-        watcher = ReconnectWatcher(dead_chunk)
+        while True:
+            time.sleep(1)
 
-        print(f"🚀 [YOLO SỐ {chunk_id}] Đang quét tọa độ cho: {list(alive_chunk.keys())}")
-        try:
-            for stream_path, frame, detections in tracker_app.track(stream_file):
-                if watcher.found_alive:
-                    print(f"🎉 [YOLO SỐ {chunk_id}] CAMERA SỐNG LẠI! Nạp nóng luồng mới...")
-                    break 
-
-                cam_id = url_to_cam_id.get(stream_path)
-                if cam_id is None:
-                    for raw_url, mapped_id in alive_chunk.items():
-                        cam_suffix = raw_url.rsplit("/", 1)[-1]  
-                        if stream_path.endswith(cam_suffix):
-                            cam_id = mapped_id
-                            break
-
-                if cam_id is None: continue
-
-                frame_counters[cam_id] += 1
-                if frame_counters[cam_id] % 30 == 0:
-                    print(f"👁️ [YOLO SỐ {chunk_id} -> {cam_id}] Bắt được {len(detections)} người")
-
-                orig_h, orig_w = frame.shape[:2]
-                tracking_data = []
-
-                for p in detections:
-                    x1, y1, x2, y2 = p["bbox"]
-                    tracking_data.append({
-                        "id": p.get("global_id"), 
-                        "name": p["name"],
-                        "x": int(x1), "y": int(y1), 
-                        "w": int(x2 - x1), "h": int(y2 - y1),
-                        "orig_w": int(orig_w), "orig_h": int(orig_h)
-                    })
-                    
-                # Bắn ra Queue dùng chung
-                out_queue.put({"cam_id": cam_id, "timestamp": time.time(), "boxes": tracking_data})
-                
-        except Exception as e:
-            print(f"💥 [YOLO SỐ {chunk_id}] Lỗi luồng ({e}). Đang tự phục hồi...")
-            time.sleep(2)
-        finally:
-            watcher.stop() 
-            if os.path.exists(stream_file): os.remove(stream_file)
-
+    except Exception as e:
+        logger.error(f"🚨 Lỗi nghiêm trọng tại YOLO Process lô số {chunk_id}: {e}", exc_info=True)
+    
 def start_yolo_background(cameras_dict, tracking_queue):
     """
     Hàm này được gọi từ Service để chạy ngầm khởi động YOLO
@@ -113,7 +99,7 @@ def start_yolo_background(cameras_dict, tracking_queue):
 
         if total_cams > 0:
             CHUNK_SIZE = calculate_optimal_chunk_size(total_cams) 
-            print(f"🚀 [SERVICE] BẮT ĐẦU CHIA LÔ KHỞI ĐỘNG {total_cams} CAMERA...")
+            logger.debug(f"🚀 [SERVICE] BẮT ĐẦU CHIA LÔ KHỞI ĐỘNG {total_cams} CAMERA...")
 
             for i in range(0, total_cams, CHUNK_SIZE):
                 chunk = dict(cameras_items[i : i + CHUNK_SIZE])
@@ -127,36 +113,56 @@ def start_yolo_background(cameras_dict, tracking_queue):
                 active_processes.append(p)
                 p.start()
                 
-                print(f"✅ Đã bật Lô {chunk_id}. Nghỉ 6s nhường tài nguyên GPU...")
+                logger.debug(f"✅ Đã bật Lô {chunk_id}. Nghỉ 6s nhường tài nguyên GPU...")
                 time.sleep(6) 
-            print("🎉 [SERVICE] TOÀN BỘ YOLO ĐÃ LÊN HÌNH!")
+            logger.debug("🎉 [SERVICE] TOÀN BỘ YOLO ĐÃ LÊN HÌNH!")
     # Chạy trong một luồng riêng để không block API chính
     thread = threading.Thread(target=_run, daemon=True)
     thread.start()
 
 def calculate_optimal_chunk_size(total_cams):
-    """Thuật toán tự động tính tỷ lệ vàng (Min YOLO - Max Camera) - HỆ ĐẠI GIA"""
-    # Nếu chạy bằng CPU, ép chạy lô 2 cho an toàn
+    """Thuật toán tự động tính tỷ lệ vàng (Dùng subprocess để không lỗi CUDA)"""
+    try:
+        out = subprocess.run(
+            ["nvidia-smi", "--query-gpu=memory.free", "--format=csv,noheader,nounits"],
+            capture_output=True, text=True, timeout=2
+        )
+        free_vram_gb = float(out.stdout.strip().split('\n')[0]) / 1024.0
+        
+        YOLO_BASE_VRAM = 1.2   
+        CAM_VRAM_COST = 0.4    
+        LATENCY_LIMIT = 6      
+        
+        if free_vram_gb < (YOLO_BASE_VRAM + CAM_VRAM_COST):
+            return 1 
+        max_possible_yolos = math.floor(free_vram_gb / (YOLO_BASE_VRAM + CAM_VRAM_COST))
+        if max_possible_yolos >= total_cams:
+            logger.debug(f"💎 [HỆ ĐẠI GIA] VRAM dư sức! Mở {total_cams} YOLO cho {total_cams} Camera. Tỷ lệ 1:1")
+            return 1
+        optimal_chunk = math.ceil(total_cams / max_possible_yolos)
+        final_chunk = min(optimal_chunk, LATENCY_LIMIT)
+        logger.debug(f"🧠 [AUTO-SCALE] VRAM {free_vram_gb:.1f}GB | Phân bổ tối ưu: {final_chunk} Cam / 1 YOLO")
+        return max(1, final_chunk)
+        
+    except Exception as e:
+        logger.error(f"⚠️ Không dùng được GPU (Hoặc lỗi nvidia-smi): {e}. Ép chạy lô 2 cho an toàn!")
+        return 2
+    
+def test_hardcore_gpu_vram():
+    print(f"--- BẮT ĐẦU TEST GPU ---")
+    # 1. Kiểm tra driver
+    print(f"CUDA Available: {torch.cuda.is_available()}")
     if not torch.cuda.is_available():
-        return 2 
-    # Lấy tổng VRAM đang trống (GB)
-    t_vram = torch.cuda.get_device_properties(0).total_memory / (1024**3)
-    a_vram = torch.cuda.memory_allocated(0) / (1024**3)
-    free_vram_gb = t_vram - a_vram
-    YOLO_BASE_VRAM = 1.2   # 1.2GB khởi tạo Model
-    CAM_VRAM_COST = 0.4    # 0.4GB cho mỗi luồng stream
-    LATENCY_LIMIT = 6      # Không vượt quá 6 Cam/YOLO để chống lag
-    # Chống móm
-    if free_vram_gb < (YOLO_BASE_VRAM + CAM_VRAM_COST):
-        return 1 
-    # 1. TÍNH XEM SERVER NÀY MỞ ĐƯỢC TỐI ĐA BAO NHIÊU YOLO (Tỷ lệ 1:1)
-    max_possible_yolos = math.floor(free_vram_gb / (YOLO_BASE_VRAM + CAM_VRAM_COST))
-    # 2. HỆ ĐẠI GIA: Nếu sức chứa >= Số Camera -> Mở mỗi cam 1 YOLO
-    if max_possible_yolos >= total_cams:
-        print(f"💎 [HỆ ĐẠI GIA] VRAM dư sức! Mở {total_cams} YOLO cho {total_cams} Camera. Tỷ lệ 1:1")
-        return 1
-    # 3. HỆ TIẾT KIỆM: Nếu VRAM không đủ mở 1:1, bắt đầu gộp lô (Batching)
-    optimal_chunk = math.ceil(total_cams / max_possible_yolos)
-    final_chunk = min(optimal_chunk, LATENCY_LIMIT)
-    print(f"🧠 [AUTO-SCALE] VRAM {free_vram_gb:.1f}GB | Phân bổ tối ưu: {final_chunk} Cam / 1 YOLO")
-    return max(1, final_chunk)
+        return
+    # 2. Setup thiết bị
+    device = "cuda:0"
+    # 3. Load model với log VRAM
+    print(f"VRAM trước khi load: {torch.cuda.memory_allocated(0)/1024**2:.2f} MB")
+    model = YOLO("yolo11s.pt").to(device)
+    print(f"VRAM sau khi load model: {torch.cuda.memory_allocated(0)/1024**2:.2f} MB")
+    # 4. QUAN TRỌNG: Phải "ép" nó chạy 1 frame thì VRAM mới nhả ra đúng
+    dummy_input = np.zeros((640, 640, 3), dtype=np.uint8)
+    print("Đang chạy 1 frame giả lập...")
+    _ = model.predict(dummy_input, device=0)
+    print(f"VRAM sau khi chạy 1 frame: {torch.cuda.memory_allocated(0)/1024**2:.2f} MB")
+    print("--- TEST XONG ---")

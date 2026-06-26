@@ -1,3 +1,7 @@
+import logging
+# Tạo logger cục bộ cho file này (nó sẽ tự thừa kế cấu hình Root ở app.py / main.py)
+logger = logging.getLogger(__name__)
+
 import asyncio
 import psutil
 import GPUtil
@@ -27,6 +31,7 @@ async def telemetry_ws(websocket: WebSocket):
                 "gpu": round(gpu_load, 1),
                 "ram": round(psutil.virtual_memory().percent, 1)
             }
+            logger.debug(f"{stats_data}")
             await websocket.send_json(stats_data)
             await asyncio.sleep(2)
     except WebSocketDisconnect:
