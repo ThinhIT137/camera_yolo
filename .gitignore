@@ -1,0 +1,40 @@
+# AI models
+*.pt
+*.pth
+*.onnx
+
+# Media
+*.mp4
+*.png
+*.jpg
+
+# Python
+**/__pycache__/
+*.pyc
+
+# Virtual env
+.venv/
+venv/
+
+# Environment
+.env
+
+# IDE
+.vs/
+.vscode/
+
+# Executables
+*.exe
+
+# MediaMTX
+MediaMTX/
+
+# Other
+*.old
+.obsidian/
+.kilo/
+
+move.py
+map.py
+estimate.py
+test.py

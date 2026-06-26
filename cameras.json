@@ -1,0 +1,7 @@
+{
+    "cam_01": "rtsp://admin:L26DDDDF@10.40.90.235:554/cam/realmonitor?channel=1&subtype=1",
+    "cam_02": "rtsp://admin:HungVuong@2023!@10.40.20.21:554/cam/realmonitor?channel=1&subtype=1",
+    "cam_03": "rtsp://admin:HungVuong@2023!@10.40.20.22:554/cam/realmonitor?channel=1&subtype=1",
+    "cam_04": "rtsp://admin:HungVuong@2023!@10.40.20.23:554/cam/realmonitor?channel=1&subtype=1",
+    "cam_05": "rtsp://admin:HungVuong@2023!@10.40.20.38:554/cam/realmonitor?channel=1&subtype=1"
+}
