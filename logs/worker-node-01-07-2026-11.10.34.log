@@ -1,0 +1,124 @@
+2026-07-01 11:10:34 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 11:10:38 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 11:10:38 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 11:10:38 | DEBUG    | __init__:1511 | interactive is False
+2026-07-01 11:10:38 | DEBUG    | __init__:1512 | platform is win32
+2026-07-01 11:10:38 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 11:10:38 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-07-01 11:10:41 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 11:10:41 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 11:10:41 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 11:10:41 | INFO     | loader:156 | Loading faiss.
+2026-07-01 11:10:41 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 11:10:41 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 11:10:45 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 11:10:45 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 11:10:45 | DEBUG    | __init__:1511 | interactive is False
+2026-07-01 11:10:45 | DEBUG    | __init__:1512 | platform is win32
+2026-07-01 11:10:45 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 11:10:45 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-07-01 11:10:47 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 11:10:47 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 11:10:47 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 11:10:47 | INFO     | loader:156 | Loading faiss.
+2026-07-01 11:10:47 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 11:10:49 | INFO     | main:63 | 
+=======================================================
+2026-07-01 11:10:49 | INFO     | main:64 | 🤖 WORKER YOLO AI ĐÃ SẴN SÀNG - ĐANG CHỜ MASTER GIAO VIỆC
+2026-07-01 11:10:49 | INFO     | main:65 | =======================================================
+
+2026-07-01 11:10:49 | DEBUG    | proactor_events:634 | Using proactor: IocpProactor
+2026-07-01 11:10:49 | INFO     | heartbeat_service:68 | 💓 [Heartbeat Service] Đã kích hoạt máy đo nhịp tim chạy ngầm...
+2026-07-01 11:10:50 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 20.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 11:10:50 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:10:50 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:10:53 | DEBUG    | cameras_router:55 | 
+🛑 Nhận lệnh Sync từ Master! Đang dọn dẹp 0 luồng YOLO cũ...
+2026-07-01 11:10:55 | DEBUG    | cameras_router:85 | ✅ [OK] Camera cam_001 - Luồng hình ảnh ổn định.
+2026-07-01 11:10:56 | DEBUG    | cameras_router:85 | ✅ [OK] Camera cam_002 - Luồng hình ảnh ổn định.
+2026-07-01 11:10:56 | INFO     | cameras_router:106 | 📊 [CHIA LÔ] Tổng: 2 Cam. Số YOLO gánh: 2 Process. Mỗi YOLO gánh: 1 Cam.
+2026-07-01 11:10:56 | DEBUG    | cameras_router:30 | 🚀 BẮT ĐẦU CHIA LÔ CHO 2 CAMERA (Tối ưu: 1 Cam/1 YOLO) 🚀
+2026-07-01 11:10:56 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 11:10:57 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 31.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 11:10:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:10:57 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:11:00 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 11:11:00 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 11:11:00 | DEBUG    | __init__:1511 | interactive is False
+2026-07-01 11:11:00 | DEBUG    | __init__:1512 | platform is win32
+2026-07-01 11:11:00 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 11:11:00 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-07-01 11:11:02 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 11:11:02 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 11:11:02 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 11:11:02 | INFO     | loader:156 | Loading faiss.
+2026-07-01 11:11:02 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 11:11:02 | INFO     | yolo_service:64 | ⚙️ [YOLO SỐ 1] TIẾP NHẬN LÔ...
+2026-07-01 11:11:03 | INFO     | yolo_service:78 | 🚀 [YOLO 1] Đang mở luồng cam_001...
+2026-07-01 11:11:03 | INFO     | yolo_service:86 | 🚀 [ZMQ] Camera cam_001 đã cầm súng, nhắm thẳng Master tại tcp://10.40.91.11:5558
+2026-07-01 11:11:04 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 26.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 11:11:04 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:11:04 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:11:04 | INFO     | yolo_service:109 | 🎥 [START] YOLO bắt đầu ăn VRAM và quét frame cho cam_001...
+2026-07-01 11:11:10 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 18.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 11:11:10 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:11:10 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:11:12 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 11:11:15 | DEBUG    | __init__:350 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 11:11:15 | DEBUG    | __init__:350 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 11:11:15 | DEBUG    | __init__:1511 | interactive is False
+2026-07-01 11:11:15 | DEBUG    | __init__:1512 | platform is win32
+2026-07-01 11:11:15 | DEBUG    | __init__:350 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 11:11:15 | DEBUG    | font_manager:1574 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v330.json
+2026-07-01 11:11:16 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 30.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 11:11:16 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:11:16 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:11:18 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 11:11:18 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 11:11:18 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 11:11:18 | INFO     | loader:156 | Loading faiss.
+2026-07-01 11:11:18 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 11:11:18 | INFO     | yolo_service:64 | ⚙️ [YOLO SỐ 2] TIẾP NHẬN LÔ...
+2026-07-01 11:11:18 | INFO     | yolo_service:78 | 🚀 [YOLO 2] Đang mở luồng cam_002...
+2026-07-01 11:11:18 | INFO     | yolo_service:86 | 🚀 [ZMQ] Camera cam_002 đã cầm súng, nhắm thẳng Master tại tcp://10.40.91.11:5558
+2026-07-01 11:11:19 | INFO     | yolo_service:109 | 🎥 [START] YOLO bắt đầu ăn VRAM và quét frame cho cam_002...
+2026-07-01 11:11:22 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 33.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.53, 'max_cam': 2}
+2026-07-01 11:11:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:11:22 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:11:28 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 27.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.52, 'max_cam': 2}
+2026-07-01 11:11:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:11:28 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:11:34 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 33.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.52, 'max_cam': 2}
+2026-07-01 11:11:34 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:11:34 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:11:40 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 36.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.52, 'max_cam': 2}
+2026-07-01 11:11:40 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:11:40 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:11:46 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 33.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.52, 'max_cam': 2}
+2026-07-01 11:11:46 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:11:46 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:11:52 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 68.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.52, 'max_cam': 2}
+2026-07-01 11:11:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:11:52 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:11:59 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 41.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.52, 'max_cam': 2}
+2026-07-01 11:11:59 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:11:59 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:12:05 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 36.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.52, 'max_cam': 2}
+2026-07-01 11:12:05 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:12:05 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:12:11 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 36.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.52, 'max_cam': 2}
+2026-07-01 11:12:11 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:12:11 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:12:17 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 38.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.52, 'max_cam': 2}
+2026-07-01 11:12:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:12:17 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 11:12:18 | INFO     | main:41 | 
+🛑 Server YOLO đang tắt máy! Đang báo cáo về Master để xả Camera...
+2026-07-01 11:12:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 11:12:18 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/servers/offline HTTP/1.1" 200 85
+2026-07-01 11:12:18 | DEBUG    | main:46 | ✅ Đã bàn giao lại toàn bộ Camera cho Master thành công!
+

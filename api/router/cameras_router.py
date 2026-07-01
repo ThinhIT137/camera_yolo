@@ -2,6 +2,8 @@ import logging
 # Tạo logger cục bộ cho file này (nó sẽ tự thừa kế cấu hình Root ở app.py / main.py)
 logger = logging.getLogger(__name__)
 
+import os
+import json
 import time
 import concurrent.futures
 import multiprocessing
@@ -14,6 +16,9 @@ from service.heartbeat_service import check_rtsp_stream
 
 router = APIRouter()
 
+STATE_PATH = os.path.join(os.path.dirname(__file__),"..", "..", "Thong_So_Yolo.json")
+with open(STATE_PATH, encoding="utf-8") as f: data = json.load(f)
+
 class CameraItem(BaseModel):
     id: str
     url: str
@@ -23,14 +28,27 @@ class SyncCameraPayload(BaseModel):
 
 def launch_yolo_processes(cameras_items, CHUNK_SIZE):
     logger.debug(f"🚀 BẮT ĐẦU CHIA LÔ CHO {len(cameras_items)} CAMERA (Tối ưu: {CHUNK_SIZE} Cam/1 YOLO) 🚀")
+    
+    # 🛠️ TỰ ĐÚC VŨ KHÍ TẠI ĐÂY (An toàn tuyệt đối trên Windows)
+    # manager = multiprocessing.Manager()
+    # shared_stats = manager.dict()
+    shared_stats = {}
+    process_queues = {}
+    cmd_queue = multiprocessing.Queue()
+
     for i in range(0, len(cameras_items), CHUNK_SIZE):
         chunk = dict(cameras_items[i : i + CHUNK_SIZE])
         chunk_id = (i // CHUNK_SIZE) + 1
-        p = multiprocessing.Process(target=ai_worker_process, args=(chunk_id, chunk, tracking_queue))
+        
+        # Bơm đủ 5 tham số cho con AI chạy mượt
+        p = multiprocessing.Process(
+            target=ai_worker_process, 
+            args=(chunk_id, chunk, tracking_queue, cmd_queue, shared_stats)
+        )
+        
         active_processes.append(p)
         p.start()
-        time.sleep(6) # Luồng ngầm nên sleep tẹt ga không sợ block Master
-    logger.info("✅ Đã khởi động xong toàn bộ luồng YOLO!")
+        time.sleep(15) # Luồng ngầm nên sleep
 
 @router.post("/api/sync_cameras")
 def sync_cameras(payload: SyncCameraPayload, background_tasks: BackgroundTasks):
@@ -79,10 +97,15 @@ def sync_cameras(payload: SyncCameraPayload, background_tasks: BackgroundTasks):
     total_cams = len(cameras_items)
 
     if total_cams > 0:
-        CHUNK_SIZE = calculate_optimal_chunk_size(total_cams) 
-        # 🔥 Giao việc khởi động nặng nề cho Background Task gánh
-        background_tasks.add_task(launch_yolo_processes, cameras_items, CHUNK_SIZE)
+        base_config = data.get("BASE", {}) 
+        
+        optimal_yolo_count = base_config.get("yolo", 1)
+        
+        CHUNK_SIZE = max(1, (total_cams + optimal_yolo_count - 1) // optimal_yolo_count)
+        
+        logger.info(f"📊 [CHIA LÔ] Tổng: {total_cams} Cam. Số YOLO gánh: {optimal_yolo_count} Process. Mỗi YOLO gánh: {CHUNK_SIZE} Cam.")
 
+        background_tasks.add_task(launch_yolo_processes, cameras_items, CHUNK_SIZE)
     return {
         "message": f"Thành công! Đang khởi động ngầm {total_cams} camera.",
         "accepted": accepted_cams,

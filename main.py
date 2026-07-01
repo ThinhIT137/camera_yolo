@@ -19,10 +19,10 @@ from contextlib import asynccontextmanager
 
 # Import các Module tự viết
 from service.state import tracking_queue
-from service.websocket_service import queue_to_websocket
+from service.websocket_service import queue_to_master
 from service.heartbeat_service import start_heartbeat
 from service.heartbeat_service import config
-from service.yolo_service import test_hardcore_gpu_vram
+from service.yolo_service import calculate_optimal_chunk_size
 from api.router import cameras_router, websocket_router, system_router
 
 @asynccontextmanager
@@ -30,8 +30,8 @@ async def lifespan(app: FastAPI):
     # ==========================================
     # 🟢 LÚC SERVER KHỞI ĐỘNG (Trần gian)
     # ==========================================
-    loop = asyncio.get_running_loop()
-    threading.Thread(target=queue_to_websocket, args=(loop, tracking_queue), daemon=True).start()
+    # loop = asyncio.get_running_loop()
+    # threading.Thread(target=queue_to_master, args=(tracking_queue), daemon=True).start()
     start_heartbeat() 
     yield 
 
@@ -59,8 +59,7 @@ app.include_router(system_router.router)
 if __name__ == "__main__":
     # Ép dùng 'spawn' cho đa tiến trình (Bắt buộc với CUDA/GPU)
     multiprocessing.set_start_method('spawn', force=True)
-    test_hardcore_gpu_vram()
-    
+    BASE = calculate_optimal_chunk_size()
     logger.info("\n=======================================================")
     logger.info("🤖 WORKER YOLO AI ĐÃ SẴN SÀNG - ĐANG CHỜ MASTER GIAO VIỆC")
     logger.info("=======================================================\n")

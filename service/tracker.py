@@ -19,8 +19,8 @@ class CameraTracker:
         door_poly: np.ndarray,
         tracker_config: str = "custom_tracker.yaml",
         occlusion_iou_threshold: float = 0.35,
-        stability_frames: int = 3,
-        track_ttl: int = 30,
+        stability_frames: int = 1,
+        track_ttl: int = 150,
         roi_entry_stability: int = 3,
     ):
         self.cam_id = cam_id
@@ -30,6 +30,7 @@ class CameraTracker:
         self.tracker_config = tracker_config
         self.ROI = roi
         self.DOOR_POLYGON = door_poly
+        self.FRAME_SKIP = 2
 
         self.OCCLUSION_IOU_THRESHOLD = occlusion_iou_threshold
         self.STABILITY_FRAMES = stability_frames
@@ -106,16 +107,18 @@ class CameraTracker:
 
     def track_loop(self):
         results = self.model.track(
-            source=self.source_url,
+            source=self.source_url, 
+            name=self.cam_id,
             conf=0.3,
-            imgsz=320,
+            imgsz=480,
             stream=True,
             tracker=self.tracker_config,
             persist=True,
             classes=[0],
+            vid_stride=self.FRAME_SKIP, # <--- CHÌA KHÓA Ở ĐÂY SẾP NHÉ!
+            #verbose=False, # Tắt log cho đỡ rác terminal
         )
-        frame_export_data = []
-
+    
         for r in results:
             self.frame_idx += 1
             frame = r.orig_img
@@ -173,63 +176,65 @@ class CameraTracker:
                                     self.gallery.mark_seen(best_gid)
                                     global_id = best_gid
 
+                    base_point = (int((x1 + x2) / 2), int(y2))
+                    center = (int((x1 + x2) / 2), int((y1 + y2) / 2))
+                    
+                    # 1. Xử lý ID và Lọc trùng AN TOÀN
                     if global_id is not None:
-                        if global_id in assigned_in_frame:
-                            if score <= assigned_in_frame[global_id]:
-                                continue
-                        assigned_in_frame[global_id] = score
+                        if global_id in assigned_in_frame and score <= assigned_in_frame[global_id]:
+                            # Tạm thời ẩn tên nếu ID bị tranh chấp, nhưng KHÔNG làm mất tọa độ
+                            current_global_id = None 
+                        else:
+                            assigned_in_frame[global_id] = score
+                            current_global_id = global_id
+                        
+                        # Chỉ chạy ReID và ROI nếu ID hợp lệ
+                        if current_global_id is not None:
+                            # ─── ROI LINKING & GALLERY (Logic của bro) ───
+                            if not self.gallery.is_linked(current_global_id):
+                                if self._in_roi(center):
+                                    self.roi_entry_frames[current_global_id] = (
+                                        self.roi_entry_frames.get(current_global_id, 0) + 1
+                                    )
+                                else:
+                                    self.roi_entry_frames[current_global_id] = 0
 
-                        base_point = (int((x1 + x2) / 2), int(y2))
-                        center = (int((x1 + x2) / 2), int((y1 + y2) / 2))
+                                if self.roi_entry_frames.get(current_global_id, 0) >= self.ROI_ENTRY_STABILITY:
+                                    pending_name = self.gallery.peek_pending_target()
+                                    if pending_name is not None:
+                                        if self.gallery.link_in_roi(current_global_id, pending_name):
+                                            if emb is not None:
+                                                self.gallery.capture_slot(pending_name, emb)
+                                            self.roi_entry_frames[current_global_id] = 0
 
-                        # ─── ROI LINKING ───
-                        if not self.gallery.is_linked(global_id):
-                            if self._in_roi(center):
-                                self.roi_entry_frames[global_id] = (
-                                    self.roi_entry_frames.get(global_id, 0) + 1
-                                )
-                            else:
-                                self.roi_entry_frames[global_id] = 0
+                            if emb is not None:
+                                self.gallery.consume_pending_capture(current_global_id, emb)
 
-                            if self.roi_entry_frames.get(global_id, 0) >= self.ROI_ENTRY_STABILITY:
-                                pending_name = self.gallery.peek_pending_target()
-                                if pending_name is not None:
-                                    if self.gallery.link_in_roi(global_id, pending_name):
-                                        if emb is not None:
-                                            self.gallery.capture_slot(pending_name, emb)
-                                        self.roi_entry_frames[global_id] = 0
+                            display_name = self.gallery.get_linked_name(current_global_id)
+                            if display_name is None:
+                                display_name = f"Unknown (ID {current_global_id})"
+                        else:
+                            display_name = "Detecting..."
+                    else:
+                        current_global_id = None
+                        display_name = "Detecting..."
 
-                        # ─── Pending capture for already-linked targets ───
-                        if emb is not None:
-                            self.gallery.consume_pending_capture(global_id, emb)
+                    # 2. LUÔN LUÔN APPEND (Bất kể có global_id hay không)
+                    current_detections.append({
+                        "id": track_id,
+                        "global_id": current_global_id if current_global_id is not None else -1,
+                        "bbox": box,
+                        "base_point": base_point,
+                        "name": display_name,
+                    })
+                    color_idx = global_id % len(self.COLOR_PALETTE)
+                    box_color = tuple(int(c) for c in self.COLOR_PALETTE[color_idx])
 
-                        display_name = self.gallery.get_linked_name(global_id)
-                        if display_name is None:
-                            display_name = f"Unknown (ID {global_id})"
-
-                        current_detections.append({
-                            "id": track_id,
-                            "global_id": global_id,
-                            "bbox": box,
-                            "base_point": base_point,
-                            "name": display_name,
-                        })
-
-                        logger.debug(f"{current_detections}")
-
-                        color_idx = global_id % len(self.COLOR_PALETTE)
-                        box_color = tuple(int(c) for c in self.COLOR_PALETTE[color_idx])
-
-                        cv2.rectangle(frame, (box[0], box[1]), (box[2], box[3]), box_color, 3)
-                        label = f"TRACKING: {display_name}"
-                        (tw, th), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)
-                        cv2.rectangle(frame, (box[0], box[1] - th - 10), (box[0] + tw, box[1]), box_color, -1)
-                        cv2.putText(frame, label, (box[0], box[1] - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
-                        # if hasattr(self, 'out_queue') and self.out_queue:
-                        #     self.out_queue.put({
-                        #         "cam_id": self.cam_id,
-                        #         "boxes": list_boxes_tinh_duoc_o_tren # Sửa lại đúng tên biến chứa tọa độ của file mới là xong
-                        #     })
+                        # cv2.rectangle(frame, (box[0], box[1]), (box[2], box[3]), box_color, 3)
+                        # label = f"TRACKING: {display_name}"
+                        # (tw, th), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)
+                        # cv2.rectangle(frame, (box[0], box[1] - th - 10), (box[0] + tw, box[1]), box_color, -1)
+                        # cv2.putText(frame, label, (box[0], box[1] - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
 
             rx1, ry1, rx2, ry2 = self.ROI
             cv2.rectangle(frame, (rx1, ry1), (rx2, ry2), (255, 255, 0), 2)

@@ -1,0 +1,21 @@
+{
+    "yolo11s": {
+        "camera": 0.4,
+        "yolo": 1.2,
+        "sai_so": 3
+    },
+    "state": {
+        "offline": "offline",
+        "running": "running",
+        "online": "online",
+        "ready": "ready",
+        "busy": "busy",
+        "fail": "fail"
+    },
+    "BASE": {
+        "yolo": 2,
+        "cam": 2,
+        "avg": 1.0,
+        "score": 2.0
+    }
+}

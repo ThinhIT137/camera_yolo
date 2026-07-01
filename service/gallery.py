@@ -21,7 +21,7 @@ class ReIDGallery:
         unnamed_emb_ttl=900,
         slot_capture_interval=5.0,
         max_slots=100,
-    ):
+    ):  
         self.lock = threading.Lock()
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -41,6 +41,7 @@ class ReIDGallery:
         self.embeddings: dict[int, np.ndarray] = {}
         self.next_global_id = 0
 
+        self.weight_path = reid_weights
         self.SIM_THRESHOLD = sim_threshold
         self.REID_TOP_K = reid_top_k
         self.EMA_ALPHA = ema_alpha
@@ -289,6 +290,7 @@ class ReIDGallery:
     def get_embedding_count(self) -> int:
         with self.lock:
             return len(self.embeddings)
+
 
     def get_index_ntotal(self) -> int:
         with self.lock:

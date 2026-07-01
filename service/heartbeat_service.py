@@ -10,6 +10,7 @@ import threading
 import os
 import cv2
 import subprocess
+import json
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -34,9 +35,14 @@ def _get_gpu_vram():
 
 def _heartbeat_loop():
     """Vòng lặp chạy ngầm đo nhịp tim"""
+    STATE_PATH = os.path.join(os.path.dirname(__file__), "..", "Thong_So_Yolo.json")
+
     while True:
         current_master_url = config["MASTER_URL"]
         current_server_id = config["SERVER_ID"]
+        
+        with open(STATE_PATH, encoding="utf-8") as f:
+            data = json.load(f)
         try:
             free_vram = _get_gpu_vram() # Gọi hàm mới
             
@@ -45,7 +51,8 @@ def _heartbeat_loop():
                 "cpu_usage": psutil.cpu_percent(interval=1),
                 "has_gpu": free_vram > 0, # Có VRAM > 0 nghĩa là có GPU Nvidia
                 "gpu_usage": 0, 
-                "vram_free_gb": free_vram 
+                "vram_free_gb": free_vram ,
+                "max_cam": data["BASE"]["cam"]
             }
             
             logger.debug(f"💓 Nhịp tim gửi Master: {payload}")
