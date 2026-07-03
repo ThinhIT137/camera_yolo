@@ -1,0 +1,1108 @@
+2026-07-02 10:53:55 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-02 10:54:19 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-02 10:54:19 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-02 10:54:19 | DEBUG    | __init__:1564 | interactive is False
+2026-07-02 10:54:19 | DEBUG    | __init__:1565 | platform is win32
+2026-07-02 10:54:19 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-02 10:54:19 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-02 10:54:20 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-02 10:54:20 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-02 10:54:20 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-02 10:54:20 | INFO     | loader:156 | Loading faiss.
+2026-07-02 10:54:21 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-02 10:54:21 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-02 10:54:28 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-02 10:54:28 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-02 10:54:28 | DEBUG    | __init__:1564 | interactive is False
+2026-07-02 10:54:28 | DEBUG    | __init__:1565 | platform is win32
+2026-07-02 10:54:28 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-02 10:54:28 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-02 10:54:29 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-02 10:54:29 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-02 10:54:29 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-02 10:54:29 | INFO     | loader:156 | Loading faiss.
+2026-07-02 10:54:29 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-02 10:54:30 | INFO     | main:63 | 
+=======================================================
+2026-07-02 10:54:30 | INFO     | main:64 | 🤖 WORKER YOLO AI ĐÃ SẴN SÀNG - ĐANG CHỜ MASTER GIAO VIỆC
+2026-07-02 10:54:30 | INFO     | main:65 | =======================================================
+
+2026-07-02 10:54:30 | DEBUG    | proactor_events:634 | Using proactor: IocpProactor
+2026-07-02 10:54:31 | INFO     | heartbeat_service:68 | 💓 [Heartbeat Service] Đã kích hoạt máy đo nhịp tim chạy ngầm...
+2026-07-02 10:54:32 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 30.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-02 10:54:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:54:32 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:54:32 | DEBUG    | cameras_router:55 | 
+🛑 Nhận lệnh Sync từ Master! Đang dọn dẹp 0 luồng YOLO cũ...
+2026-07-02 10:54:34 | DEBUG    | cameras_router:85 | ✅ [OK] Camera cam_001 - Luồng hình ảnh ổn định.
+2026-07-02 10:54:35 | DEBUG    | cameras_router:85 | ✅ [OK] Camera cam_002 - Luồng hình ảnh ổn định.
+2026-07-02 10:54:35 | INFO     | cameras_router:106 | 📊 [CHIA LÔ] Tổng: 2 Cam. Số YOLO gánh: 2 Process. Mỗi YOLO gánh: 1 Cam.
+2026-07-02 10:54:35 | DEBUG    | cameras_router:30 | 🚀 BẮT ĐẦU CHIA LÔ CHO 2 CAMERA (Tối ưu: 1 Cam/1 YOLO) 🚀
+2026-07-02 10:54:35 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-02 10:54:38 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 26.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-02 10:54:38 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:54:38 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:54:45 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 41.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-02 10:54:45 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:54:45 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:54:45 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-02 10:54:45 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-02 10:54:45 | DEBUG    | __init__:1564 | interactive is False
+2026-07-02 10:54:45 | DEBUG    | __init__:1565 | platform is win32
+2026-07-02 10:54:45 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-02 10:54:45 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-02 10:54:46 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-02 10:54:46 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-02 10:54:46 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-02 10:54:46 | INFO     | loader:156 | Loading faiss.
+2026-07-02 10:54:46 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-02 10:54:47 | INFO     | yolo_service:104 | ⚙️ [YOLO SỐ 1] TIẾP NHẬN LÔ...
+2026-07-02 10:54:48 | INFO     | gallery:43 | Loading ONNX model from osnet_x1_0.onnx...
+2026-07-02 10:54:49 | INFO     | yolo_service:122 | 🚀 Đang nạp model ReID vào CUDAExecutionProvider...
+2026-07-02 10:54:49 | INFO     | yolo_service:131 | 🚀 [YOLO 1] Đang mở luồng cam_001...
+2026-07-02 10:54:49 | INFO     | yolo_service:139 | 🚀 [ZMQ] Camera cam_001 đã cầm súng, nhắm thẳng Master tại tcp://10.40.91.11:5558
+2026-07-02 10:54:50 | INFO     | yolo_service:163 | 🎥 [START] YOLO bắt đầu ăn VRAM và quét frame cho cam_001...
+2026-07-02 10:54:50 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-02 10:54:51 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 83.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.76, 'max_cam': 2}
+2026-07-02 10:54:51 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:54:51 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:54:57 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 70.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-02 10:54:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:54:57 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:54:58 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 8089.90ms
+2026-07-02 10:54:58 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 39.00ms
+2026-07-02 10:55:00 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 1788.12ms
+2026-07-02 10:55:00 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 100.56ms
+2026-07-02 10:55:01 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 709.67ms
+2026-07-02 10:55:01 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 97.87ms
+2026-07-02 10:55:01 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 558.38ms
+2026-07-02 10:55:01 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 131.40ms
+2026-07-02 10:55:01 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 151.64ms
+2026-07-02 10:55:02 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 86.79ms
+2026-07-02 10:55:02 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 499.37ms
+2026-07-02 10:55:03 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 470.14ms
+2026-07-02 10:55:03 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 676.47ms
+2026-07-02 10:55:03 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 79.57ms
+2026-07-02 10:55:03 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 130.60ms
+2026-07-02 10:55:04 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 98.62ms
+2026-07-02 10:55:04 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 54.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.62, 'max_cam': 2}
+2026-07-02 10:55:04 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:55:04 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:55:04 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 78.52ms
+2026-07-02 10:55:04 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 71.90ms
+2026-07-02 10:55:04 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 54.12ms
+2026-07-02 10:55:04 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 72.36ms
+2026-07-02 10:55:04 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 52.15ms
+2026-07-02 10:55:04 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 137.15ms
+2026-07-02 10:55:04 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 50.86ms
+2026-07-02 10:55:04 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 113.02ms
+2026-07-02 10:55:04 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 157.59ms
+2026-07-02 10:55:04 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 68.84ms
+2026-07-02 10:55:05 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 136.46ms
+2026-07-02 10:55:05 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 59.58ms
+2026-07-02 10:55:05 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 153.44ms
+2026-07-02 10:55:05 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.97ms
+2026-07-02 10:55:05 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 46.27ms
+2026-07-02 10:55:05 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 43.29ms
+2026-07-02 10:55:05 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 174.99ms
+2026-07-02 10:55:05 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 57.74ms
+2026-07-02 10:55:05 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 46.72ms
+2026-07-02 10:55:05 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 142.48ms
+2026-07-02 10:55:05 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 67.38ms
+2026-07-02 10:55:06 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 134.17ms
+2026-07-02 10:55:06 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.93ms
+2026-07-02 10:55:06 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 146.68ms
+2026-07-02 10:55:06 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 631.63ms
+2026-07-02 10:55:06 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 57.69ms
+2026-07-02 10:55:06 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 50.46ms
+2026-07-02 10:55:06 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.19ms
+2026-07-02 10:55:07 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 145.56ms
+2026-07-02 10:55:07 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 60.91ms
+2026-07-02 10:55:07 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 115.78ms
+2026-07-02 10:55:07 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 46.86ms
+2026-07-02 10:55:07 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 43.26ms
+2026-07-02 10:55:07 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-02 10:55:07 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-02 10:55:07 | DEBUG    | __init__:1564 | interactive is False
+2026-07-02 10:55:07 | DEBUG    | __init__:1565 | platform is win32
+2026-07-02 10:55:07 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 106.67ms
+2026-07-02 10:55:07 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-02 10:55:07 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-02 10:55:07 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 109.24ms
+2026-07-02 10:55:07 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 107.19ms
+2026-07-02 10:55:07 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 46.03ms
+2026-07-02 10:55:07 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 127.74ms
+2026-07-02 10:55:07 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 60.12ms
+2026-07-02 10:55:08 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 42.15ms
+2026-07-02 10:55:08 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 134.78ms
+2026-07-02 10:55:08 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 78.09ms
+2026-07-02 10:55:08 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 154.83ms
+2026-07-02 10:55:08 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 65.99ms
+2026-07-02 10:55:08 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 59.69ms
+2026-07-02 10:55:08 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 58.79ms
+2026-07-02 10:55:08 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-02 10:55:08 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-02 10:55:08 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-02 10:55:08 | INFO     | loader:156 | Loading faiss.
+2026-07-02 10:55:08 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 53.15ms
+2026-07-02 10:55:08 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-02 10:55:08 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 149.74ms
+2026-07-02 10:55:08 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 61.58ms
+2026-07-02 10:55:08 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 128.53ms
+2026-07-02 10:55:09 | INFO     | yolo_service:104 | ⚙️ [YOLO SỐ 2] TIẾP NHẬN LÔ...
+2026-07-02 10:55:09 | INFO     | gallery:43 | Loading ONNX model from osnet_x1_0.onnx...
+2026-07-02 10:55:09 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 722.85ms
+2026-07-02 10:55:09 | INFO     | yolo_service:122 | 🚀 Đang nạp model ReID vào CUDAExecutionProvider...
+2026-07-02 10:55:10 | INFO     | yolo_service:131 | 🚀 [YOLO 2] Đang mở luồng cam_002...
+2026-07-02 10:55:10 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 57.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.62, 'max_cam': 2}
+2026-07-02 10:55:10 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:55:10 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:55:10 | INFO     | yolo_service:139 | 🚀 [ZMQ] Camera cam_002 đã cầm súng, nhắm thẳng Master tại tcp://10.40.91.11:5558
+2026-07-02 10:55:10 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 746.71ms
+2026-07-02 10:55:10 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 89.23ms
+2026-07-02 10:55:10 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 53.24ms
+2026-07-02 10:55:10 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 142.09ms
+2026-07-02 10:55:10 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 67.86ms
+2026-07-02 10:55:10 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 148.00ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 55.86ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 118.81ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 45.95ms
+2026-07-02 10:55:11 | INFO     | yolo_service:163 | 🎥 [START] YOLO bắt đầu ăn VRAM và quét frame cho cam_002...
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 59.46ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.37ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 39.45ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 126.82ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 41.37ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.56ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 37.44ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 160.07ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 51.63ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 118.03ms
+2026-07-02 10:55:11 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 70.34ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 51.45ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 57.36ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.54ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 45.54ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 140.49ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 76.87ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 135.90ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 54.36ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 140.14ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 40.74ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 48.14ms
+2026-07-02 10:55:12 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 119.09ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 45.88ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 141.84ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 103.30ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 51.06ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 50.30ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.10ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 137.73ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 57.85ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 118.42ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.77ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 52.25ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 117.21ms
+2026-07-02 10:55:13 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 52.04ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 119.90ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 71.69ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 76.54ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 71.53ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 3139.90ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 59.45ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 43.29ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 36.95ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 32.60ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 31.80ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 125.50ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 25.82ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 32.64ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 54.78ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.41ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.70ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 53.50ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.46ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 44.74ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.37ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 23.81ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 25.66ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.53ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.87ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 121.31ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 30.12ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.02ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 19.40ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.19ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 126.94ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 70.63ms
+2026-07-02 10:55:14 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 66.17ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 37.50ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.87ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.97ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 113.11ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 68.43ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.16ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 69.27ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 62.08ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 44.28ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.35ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 57.21ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.51ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.32ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 30.33ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 118.89ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 21.80ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.30ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 82.21ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 152.07ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.91ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.35ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 55.92ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.16ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.19ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.61ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 127.91ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 63.05ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 76.62ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 73.70ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 31.52ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.20ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.72ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 125.63ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 44.62ms
+2026-07-02 10:55:15 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.20ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 19.29ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 73.04ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 48.38ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 157.10ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 35.94ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 25.42ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 55.19ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 43.53ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.12ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 113.44ms
+2026-07-02 10:55:16 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 60.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.44, 'max_cam': 2}
+2026-07-02 10:55:16 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:55:16 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 51.95ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 66.10ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.59ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 52.18ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.00ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 71.62ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 121.58ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.80ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.06ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.37ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.30ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.83ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 115.16ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.31ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 41.92ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.63ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 33.34ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 75.22ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 34.55ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 143.78ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 38.60ms
+2026-07-02 10:55:16 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.87ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 61.53ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.81ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.37ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.67ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 151.67ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 121.26ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 78.85ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 32.68ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.51ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 57.46ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 41.52ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.56ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 23.98ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 46.39ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 19.30ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 19.51ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 136.97ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 116.60ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 37.08ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 65.54ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 75.61ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 111.48ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.25ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 63.51ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.13ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 123.10ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 33.17ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 45.28ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.79ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 60.44ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 37.96ms
+2026-07-02 10:55:17 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.74ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 58.29ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.45ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.60ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.26ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 119.42ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.46ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 50.27ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.48ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.06ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 25.50ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 119.25ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 68.06ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 57.92ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 30.39ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 55.85ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.81ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.97ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 48.55ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.99ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 58.98ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 32.63ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.22ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 53.80ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 68.38ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.37ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.92ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 123.01ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.74ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 43.20ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 68.74ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 67.28ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 45.99ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.32ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 47.64ms
+2026-07-02 10:55:18 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.00ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.92ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.38ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 192.15ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.85ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 35.75ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 66.77ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 30.19ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.00ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.30ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 108.05ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 59.95ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 42.90ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 30.41ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 54.07ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.61ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.00ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.57ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 119.98ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 76.18ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 60.12ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 46.07ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.38ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 23.53ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 48.37ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 21.49ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 50.27ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.60ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.69ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 41.99ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.79ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 38.57ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 34.72ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 138.95ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 65.15ms
+2026-07-02 10:55:19 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 71.68ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 73.99ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 81.92ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.81ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 34.48ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 70.89ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 25.10ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 33.44ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 85.54ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.93ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 21.72ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 19.93ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 128.51ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.17ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.99ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.30ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.89ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 125.85ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 55.05ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.13ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 51.47ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.17ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 59.87ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.47ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.90ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 59.50ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 47.73ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 56.07ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 21.05ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 49.22ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 63.97ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 76.08ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 128.44ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 34.95ms
+2026-07-02 10:55:20 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 69.38ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.96ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.05ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 57.75ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 55.64ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.90ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 15.87ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 44.58ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 66.14ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 47.74ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 82.23ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 40.59ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 143.63ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 74.51ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 77.49ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 38.52ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.74ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 25.03ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 116.05ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.12ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 51.90ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.83ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 59.12ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 130.24ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.93ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.02ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.23ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.29ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.83ms
+2026-07-02 10:55:21 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 74.53ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 75.88ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 44.36ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 48.57ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.43ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 41.38ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 44.20ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 45.93ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 44.79ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 33.89ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.61ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 788.05ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.36ms
+2026-07-02 10:55:22 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 82.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.44, 'max_cam': 2}
+2026-07-02 10:55:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:55:22 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 38.08ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 36.02ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.11ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 141.16ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 79.03ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.64ms
+2026-07-02 10:55:22 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 59.02ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 59.40ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 39.80ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.10ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 33.63ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.78ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 46.86ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 43.83ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.22ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 924.44ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 188.71ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 19.19ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 18.98ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.97ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 95.43ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 59.19ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 15.00ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 69.86ms
+2026-07-02 10:55:23 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.20ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 70.77ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 35.77ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 44.77ms
+2026-07-02 10:55:24 | INFO     | gallery:233 | REID: thêm dáng vẻ mới cho global_id=4 (2/3 slot)
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 711.30ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.55ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 23.79ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 73.82ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 37.14ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.48ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 68.08ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.13ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 126.14ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 91.50ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 72.58ms
+2026-07-02 10:55:24 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.43ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 100.42ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 80.38ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 73.65ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.13ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 37.63ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 35.02ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 34.95ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 32.04ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 41.97ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 36.85ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 1314.09ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 30.61ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 45.19ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 81.99ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 228.98ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 252.94ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.90ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 47.55ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 23.69ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.68ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 18.26ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 110.37ms
+2026-07-02 10:55:25 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.94ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 19.40ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.70ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.03ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.73ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 63.93ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.69ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.42ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 71.01ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 36.05ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.05ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.57ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.82ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 21.05ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 23.09ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 17.02ms
+2026-07-02 10:55:26 | INFO     | gallery:233 | REID: thêm dáng vẻ mới cho global_id=4 (3/3 slot)
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 648.16ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.06ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 17.57ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.05ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 18.82ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.70ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.00ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.26ms
+2026-07-02 10:55:26 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 63.21ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.06ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.79ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 32.32ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 43.06ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 18.45ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 59.81ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 627.43ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 45.16ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.93ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 115.98ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 133.56ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 25.44ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 23.90ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 21.65ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 126.87ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 69.83ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.07ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 54.06ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.45ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 25.25ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.32ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.09ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 66.20ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 30.67ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 69.43ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.69ms
+2026-07-02 10:55:27 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.36ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.75ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 68.43ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 40.59ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.46ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 63.50ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.17ms
+2026-07-02 10:55:28 | INFO     | gallery:242 | REID: thay slot cũ nhất (idx=0) bằng dáng vẻ mới cho global_id=4
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 685.40ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.98ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 74.46ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.47ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.87ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.42ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.55ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.17ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 23.97ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 21.12ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.19ms
+2026-07-02 10:55:28 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 63.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.44, 'max_cam': 2}
+2026-07-02 10:55:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:55:28 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 32.08ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.14ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.39ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 21.94ms
+2026-07-02 10:55:28 | INFO     | gallery:242 | REID: thay slot cũ nhất (idx=1) bằng dáng vẻ mới cho global_id=4
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 592.78ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.92ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 47.66ms
+2026-07-02 10:55:28 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.80ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.10ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.24ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.74ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 88.99ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.06ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.18ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.61ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.18ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 15.30ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 16.35ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 587.32ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.85ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.86ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 33.39ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 23.78ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 55.14ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 59.58ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 95.98ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 66.94ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 16.39ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 99.04ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 56.16ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 12.44ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 68.86ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 26.60ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 70.39ms
+2026-07-02 10:55:29 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.37ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.88ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.35ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 19.67ms
+2026-07-02 10:55:30 | INFO     | gallery:242 | REID: thay slot cũ nhất (idx=2) bằng dáng vẻ mới cho global_id=4
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 420.39ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 295.96ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.31ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 288.85ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 14.98ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 38.28ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.36ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.72ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 96.20ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.34ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.40ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 12.37ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 97.23ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 56.38ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 10.97ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.63ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 91.35ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.47ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 11.31ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.07ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 155.74ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 48.56ms
+2026-07-02 10:55:30 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.22ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 93.82ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 48.47ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 68.11ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 105.68ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 12.94ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 34.31ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 25.17ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 54.98ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 10.61ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.60ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 114.46ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 54.84ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 24.75ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.01ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.98ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 101.42ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 54.89ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 10.70ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 92.68ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.70ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.14ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 12.31ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.15ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 54.23ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 10.55ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.31ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.06ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 8.07ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 355.04ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.92ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.59ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.69ms
+2026-07-02 10:55:31 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 10.02ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.54ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 207.06ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 51.31ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 29.90ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 21.47ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.66ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.72ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 104.11ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 97.40ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 110.29ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 48.39ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 103.47ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 13.80ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.67ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 98.34ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 37.14ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.51ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 54.82ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 12.70ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 93.20ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.48ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 18.40ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 91.02ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 56.15ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 56.21ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 93.51ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 54.23ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 102.35ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.81ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 19.00ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 37.87ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 20.29ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.70ms
+2026-07-02 10:55:32 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.14ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 66.47ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 118.41ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 55.73ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.77ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 15.67ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.19ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 11.57ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 243.67ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 101.15ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 21.62ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 16.67ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 56.46ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 11.42ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.36ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 55.29ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 258.81ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 24.81ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.52ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 68.17ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 115.33ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.59ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.04ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 17.73ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 95.60ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.44ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.60ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 96.62ms
+2026-07-02 10:55:33 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.45ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.10ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 103.26ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 56.59ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 89.26ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.55ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.52ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 100.27ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 72.85ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.44ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 116.44ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 97.42ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 99.49ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 69.78ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 59.58ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 102.01ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 51.18ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.59ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 90.61ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 51.58ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.79ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.96ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 106.01ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 19.34ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 26.95ms
+2026-07-02 10:55:34 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 44.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.44, 'max_cam': 2}
+2026-07-02 10:55:34 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:55:34 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.07ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.52ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 104.59ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 13.44ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 51.18ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 92.53ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.90ms
+2026-07-02 10:55:34 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 12.82ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 100.28ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 70.85ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.01ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 68.79ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 106.48ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.09ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.48ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 95.69ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.83ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.41ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 108.54ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.73ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.24ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 94.90ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.78ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.82ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 101.86ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 51.79ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.80ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 104.84ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 27.38ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.88ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 54.53ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 106.73ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.47ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 69.21ms
+2026-07-02 10:55:35 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 30.26ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 364.40ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 250.38ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 10.72ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 31.77ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 51.55ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 7.37ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 83.73ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 23.48ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 89.24ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 51.93ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 96.80ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.77ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 8.60ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 97.45ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 63.93ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 28.76ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 21.61ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.41ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.58ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.06ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.85ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.35ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.01ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 47.85ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 289.35ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 17.66ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.25ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 13.91ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 33.99ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.90ms
+2026-07-02 10:55:36 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 83.59ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.78ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 48.19ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 84.48ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 89.64ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 96.34ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.55ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.34ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 85.87ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 51.91ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.15ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 92.76ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 55.21ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 278.58ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 16.65ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 88.29ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 18.27ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 89.59ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 91.92ms
+2026-07-02 10:55:37 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 24.68ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 672.75ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 95.38ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 40.32ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 18.70ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 66.38ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.44ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.65ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.58ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 288.93ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.86ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 38.42ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 35.44ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.27ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.62ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.72ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 91.86ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 17.21ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.73ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.19ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.93ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 11.67ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.21ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 11.57ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.52ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 279.17ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.04ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 30.92ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.89ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 50.94ms
+2026-07-02 10:55:38 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 94.12ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 51.59ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.85ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 303.94ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 55.37ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 23.28ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 19.90ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.91ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.81ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 116.92ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.41ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 18.80ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 99.45ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 14.95ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 14.04ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.72ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 151.48ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 91.73ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 92.21ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 51.23ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 10.27ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 88.32ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.08ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 19.19ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.27ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.68ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 89.12ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.76ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.32ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 112.94ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.21ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 30.83ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 54.61ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 55.46ms
+2026-07-02 10:55:39 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 18.71ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 55.32ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.13ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 27.01ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 16.77ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 318.63ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 61.38ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 33.92ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.53ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 21.90ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 53.10ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 96.26ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.47ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.89ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.61ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 88.87ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 101.69ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 101.97ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 51.84ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 77.35ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 229.46ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 133.43ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 26.14ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.81ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.67ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.44ms
+2026-07-02 10:55:40 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 36.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.4, 'max_cam': 2}
+2026-07-02 10:55:40 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 92.91ms
+2026-07-02 10:55:40 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 27.69ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.47ms
+2026-07-02 10:55:40 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.61ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.69ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 88.18ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.44ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.84ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 104.72ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 17.76ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.88ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 88.79ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.17ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 86.10ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.02ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.21ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 23.81ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 167.87ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 70.18ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.27ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 90.81ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.75ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 18.53ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 104.43ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 78.85ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 21.06ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 96.78ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 73.96ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.78ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 97.62ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 63.75ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 35.60ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 20.54ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 71.79ms
+2026-07-02 10:55:41 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.05ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 95.43ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 34.51ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 22.43ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 103.93ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 80.64ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 24.61ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 29.07ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 18.15ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 93.24ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 76.96ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 23.60ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 43.35ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.68ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 78.92ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 91.06ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.21ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 18.98ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 15.99ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 86.50ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.90ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 93.36ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.42ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 69.09ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 13.42ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 99.82ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 18.53ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 49.93ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 9.03ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 100.85ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 72.38ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 56.27ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 92.14ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 23.48ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 68.25ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 37.99ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 30.42ms
+2026-07-02 10:55:42 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.26ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 95.38ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 69.20ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 21.69ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 83.84ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 108.63ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 16.81ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.77ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 94.14ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.02ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.76ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 96.53ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 64.95ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 28.61ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 91.72ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.14ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 99.91ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 65.19ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 29.72ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 15.94ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 13.84ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 58.87ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 90.99ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 19.14ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 12.23ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 19.18ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.66ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 88.46ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 52.76ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 55.56ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 86.68ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 57.80ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.69ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 20.31ms
+2026-07-02 10:55:43 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 62.87ms
+2026-07-02 10:55:44 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 24.16ms
+2026-07-02 10:55:44 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 60.73ms
+2026-07-02 10:55:44 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 282.15ms
+2026-07-02 10:55:44 | DEBUG    | yolo_service:199 | [cam_002] Thời gian xử lý frame 67.65ms
+2026-07-02 10:55:44 | DEBUG    | yolo_service:199 | [cam_001] Thời gian xử lý frame 42.89ms
+2026-07-02 10:55:44 | INFO     | main:41 | 
+🛑 Server YOLO đang tắt máy! Đang báo cáo về Master để xả Camera...
+2026-07-02 10:55:44 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-02 10:55:44 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/servers/offline HTTP/1.1" 200 85
+2026-07-02 10:55:44 | DEBUG    | main:46 | ✅ Đã bàn giao lại toàn bộ Camera cho Master thành công!
+

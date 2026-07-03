@@ -1,0 +1,189 @@
+2026-07-01 14:02:49 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 14:02:54 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 14:02:54 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:02:54 | DEBUG    | __init__:1564 | interactive is False
+2026-07-01 14:02:54 | DEBUG    | __init__:1565 | platform is win32
+2026-07-01 14:02:54 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:02:54 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-01 14:02:59 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 14:02:59 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 14:02:59 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 14:02:59 | INFO     | loader:156 | Loading faiss.
+2026-07-01 14:02:59 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 14:03:00 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 14:03:03 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 14:03:03 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:03:03 | DEBUG    | __init__:1564 | interactive is False
+2026-07-01 14:03:03 | DEBUG    | __init__:1565 | platform is win32
+2026-07-01 14:03:03 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:03:03 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-01 14:03:06 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 14:03:06 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 14:03:06 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 14:03:06 | INFO     | loader:156 | Loading faiss.
+2026-07-01 14:03:06 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 14:03:08 | INFO     | main:63 | 
+=======================================================
+2026-07-01 14:03:08 | INFO     | main:64 | 🤖 WORKER YOLO AI ĐÃ SẴN SÀNG - ĐANG CHỜ MASTER GIAO VIỆC
+2026-07-01 14:03:08 | INFO     | main:65 | =======================================================
+
+2026-07-01 14:03:08 | DEBUG    | proactor_events:634 | Using proactor: IocpProactor
+2026-07-01 14:03:08 | INFO     | heartbeat_service:68 | 💓 [Heartbeat Service] Đã kích hoạt máy đo nhịp tim chạy ngầm...
+2026-07-01 14:03:09 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 20.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 14:03:09 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:03:09 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:03:16 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 17.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 14:03:16 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:03:16 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:03:17 | DEBUG    | cameras_router:55 | 
+🛑 Nhận lệnh Sync từ Master! Đang dọn dẹp 0 luồng YOLO cũ...
+2026-07-01 14:03:19 | DEBUG    | cameras_router:85 | ✅ [OK] Camera cam_002 - Luồng hình ảnh ổn định.
+2026-07-01 14:03:21 | DEBUG    | cameras_router:85 | ✅ [OK] Camera cam_001 - Luồng hình ảnh ổn định.
+2026-07-01 14:03:21 | INFO     | cameras_router:106 | 📊 [CHIA LÔ] Tổng: 2 Cam. Số YOLO gánh: 2 Process. Mỗi YOLO gánh: 1 Cam.
+2026-07-01 14:03:21 | DEBUG    | cameras_router:30 | 🚀 BẮT ĐẦU CHIA LÔ CHO 2 CAMERA (Tối ưu: 1 Cam/1 YOLO) 🚀
+2026-07-01 14:03:21 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 14:03:22 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 29.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 14:03:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:03:22 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:03:25 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 14:03:25 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:03:25 | DEBUG    | __init__:1564 | interactive is False
+2026-07-01 14:03:25 | DEBUG    | __init__:1565 | platform is win32
+2026-07-01 14:03:25 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:03:25 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-01 14:03:28 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 14:03:28 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 14:03:28 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 14:03:28 | INFO     | loader:156 | Loading faiss.
+2026-07-01 14:03:28 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 14:03:28 | INFO     | yolo_service:64 | ⚙️ [YOLO SỐ 1] TIẾP NHẬN LÔ...
+2026-07-01 14:03:29 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 32.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 14:03:29 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:03:29 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:03:30 | INFO     | yolo_service:78 | 🚀 [YOLO 1] Đang mở luồng cam_002...
+2026-07-01 14:03:30 | INFO     | yolo_service:86 | 🚀 [ZMQ] Camera cam_002 đã cầm súng, nhắm thẳng Master tại tcp://10.40.91.11:5558
+2026-07-01 14:03:31 | ERROR    | yolo_service:156 | ❌ Lỗi sập luồng camera cam_002: model='yolo11n.engine' should be a *.pt PyTorch model to run this method, but is a different format. PyTorch models can train, val, predict and export, i.e. 'model.train(data=...)', but exported formats like ONNX, TensorRT etc. only support 'predict' and 'val' modes, i.e. 'yolo predict model=yolo26n.onnx'.
+To run CUDA or MPS inference please pass the device argument directly in your inference command, i.e. 'model.predict(source=..., device=0)'
+Traceback (most recent call last):
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\service\yolo_service.py", line 95, in run_tracking_loop
+    yolo_model.to(device)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1340, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\ultralytics\engine\model.py", line 874, in _apply
+    self._check_is_pytorch_model()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\ultralytics\engine\model.py", line 315, in _check_is_pytorch_model
+    raise TypeError(
+TypeError: model='yolo11n.engine' should be a *.pt PyTorch model to run this method, but is a different format. PyTorch models can train, val, predict and export, i.e. 'model.train(data=...)', but exported formats like ONNX, TensorRT etc. only support 'predict' and 'val' modes, i.e. 'yolo predict model=yolo26n.onnx'.
+To run CUDA or MPS inference please pass the device argument directly in your inference command, i.e. 'model.predict(source=..., device=0)'
+2026-07-01 14:03:35 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 18.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.78, 'max_cam': 2}
+2026-07-01 14:03:35 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:03:35 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:03:36 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 14:03:40 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 14:03:40 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:03:40 | DEBUG    | __init__:1564 | interactive is False
+2026-07-01 14:03:40 | DEBUG    | __init__:1565 | platform is win32
+2026-07-01 14:03:40 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:03:40 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-01 14:03:41 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 30.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.78, 'max_cam': 2}
+2026-07-01 14:03:41 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:03:41 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:03:43 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 14:03:43 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 14:03:43 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 14:03:43 | INFO     | loader:156 | Loading faiss.
+2026-07-01 14:03:43 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 14:03:43 | INFO     | yolo_service:64 | ⚙️ [YOLO SỐ 2] TIẾP NHẬN LÔ...
+2026-07-01 14:03:43 | INFO     | yolo_service:78 | 🚀 [YOLO 2] Đang mở luồng cam_001...
+2026-07-01 14:03:43 | INFO     | yolo_service:86 | 🚀 [ZMQ] Camera cam_001 đã cầm súng, nhắm thẳng Master tại tcp://10.40.91.11:5558
+2026-07-01 14:03:44 | ERROR    | yolo_service:156 | ❌ Lỗi sập luồng camera cam_001: model='yolo11n.engine' should be a *.pt PyTorch model to run this method, but is a different format. PyTorch models can train, val, predict and export, i.e. 'model.train(data=...)', but exported formats like ONNX, TensorRT etc. only support 'predict' and 'val' modes, i.e. 'yolo predict model=yolo26n.onnx'.
+To run CUDA or MPS inference please pass the device argument directly in your inference command, i.e. 'model.predict(source=..., device=0)'
+Traceback (most recent call last):
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\service\yolo_service.py", line 95, in run_tracking_loop
+    yolo_model.to(device)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1340, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\ultralytics\engine\model.py", line 874, in _apply
+    self._check_is_pytorch_model()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\ultralytics\engine\model.py", line 315, in _check_is_pytorch_model
+    raise TypeError(
+TypeError: model='yolo11n.engine' should be a *.pt PyTorch model to run this method, but is a different format. PyTorch models can train, val, predict and export, i.e. 'model.train(data=...)', but exported formats like ONNX, TensorRT etc. only support 'predict' and 'val' modes, i.e. 'yolo predict model=yolo26n.onnx'.
+To run CUDA or MPS inference please pass the device argument directly in your inference command, i.e. 'model.predict(source=..., device=0)'
+2026-07-01 14:03:48 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 20.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:03:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:03:48 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:03:54 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 27.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:03:54 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:03:54 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:04:00 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 30.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:04:00 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:04:00 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:04:06 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 34.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:04:06 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:04:06 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:04:12 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 33.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:04:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:04:12 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:04:18 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 26.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:04:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:04:18 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:04:24 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 26.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:04:24 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:04:24 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:04:30 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 34.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:04:30 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:04:30 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:04:36 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 23.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:04:36 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:04:36 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:04:43 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 24.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:04:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:04:43 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:04:49 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 23.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:04:49 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:04:49 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:04:55 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 30.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:04:55 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:04:55 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:05:01 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 28.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:05:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:05:01 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:05:07 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 26.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:05:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:05:07 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:05:13 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 44.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:05:13 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:05:13 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:05:19 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 37.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:05:19 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:05:19 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:05:25 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 26.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:05:25 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:05:25 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:05:31 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 60.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:05:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:05:31 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:05:38 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 76.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:05:38 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:05:38 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:05:44 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 39.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:05:44 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:05:44 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:05:50 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 21.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:05:50 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:05:50 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:05:56 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 20.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.69, 'max_cam': 2}
+2026-07-01 14:05:56 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:05:56 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:05:57 | INFO     | main:41 | 
+🛑 Server YOLO đang tắt máy! Đang báo cáo về Master để xả Camera...
+2026-07-01 14:05:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:05:57 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/servers/offline HTTP/1.1" 200 85
+2026-07-01 14:05:57 | DEBUG    | main:46 | ✅ Đã bàn giao lại toàn bộ Camera cho Master thành công!
+

@@ -6,6 +6,7 @@ logger = logging.getLogger(__name__)
 import zmq
 import queue
 import os
+import time
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 import asyncio
@@ -74,7 +75,6 @@ def queue_to_master(q):
             if data:
                 # 🔥 Đính kèm luôn Thẻ tên (SERVER_ID) để Master biết thằng nào đang cày
                 data["server_id"] = SERVER_ID
-                print(data)
                 # Ném phi tiêu qua Master! 
                 socket.send_json(data, zmq.NOBLOCK)
         except zmq.error.Again:

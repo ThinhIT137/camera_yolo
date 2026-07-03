@@ -1,0 +1,45 @@
+2026-07-01 14:00:34 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 14:00:38 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 14:00:38 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:00:38 | DEBUG    | __init__:1564 | interactive is False
+2026-07-01 14:00:38 | DEBUG    | __init__:1565 | platform is win32
+2026-07-01 14:00:38 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:00:38 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-01 14:00:40 | CRITICAL | logger_utils:63 | 🚨 [HỆ THỐNG SẬP NGUỒN ĐỘT NGỘT] Lỗi chưa được xử lý:
+Traceback (most recent call last):
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\main.py", line 25, in <module>
+    from service.yolo_service import calculate_optimal_chunk_size
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\service\yolo_service.py", line 20, in <module>
+    from service.gallery import ReIDGallery
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\service\gallery.py", line 6, in <module>
+    import torchreid
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchreid\__init__.py", line 1, in <module>
+    from torchreid.reid import data, engine, losses, metrics, models, optim, utils
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchreid\reid\__init__.py", line 3, in <module>
+    from torchreid.reid import data, engine, losses, metrics, models, optim, utils
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchreid\reid\data\__init__.py", line 3, in <module>
+    from torchreid.reid.data.datasets.dataset import Dataset, ImageDataset, VideoDataset
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchreid\reid\data\datasets\__init__.py", line 4, in <module>
+    from torchreid.reid.data.datasets.image import (
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchreid\reid\data\datasets\image\__init__.py", line 3, in <module>
+    from torchreid.reid.data.datasets.image.grid import GRID
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchreid\reid\data\datasets\image\grid.py", line 4, in <module>
+    from scipy.io import loadmat
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\io\__init__.py", line 102, in <module>
+    from .matlab import loadmat, savemat, whosmat
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\io\matlab\__init__.py", line 47, in <module>
+    from ._mio import loadmat, savemat, whosmat
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\io\matlab\_mio.py", line 12, in <module>
+    from ._mio4 import MatFile4Reader, MatFile4Writer
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\io\matlab\_mio4.py", line 10, in <module>
+    import scipy.sparse
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\sparse\__init__.py", line 250, in <module>
+    from ._base import *
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\sparse\_base.py", line 8, in <module>
+    from ._sputils import (asmatrix, check_shape,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scipy\sparse\_sputils.py", line 17, in <module>
+    np.uintc, np.long, np.ulong, np.longlong, np.ulonglong,
+              ^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\__init__.py", line 347, in __getattr__
+    raise AttributeError("module {!r} has no attribute "
+AttributeError: module 'numpy' has no attribute 'long'. Did you mean: 'log'?

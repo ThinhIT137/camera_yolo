@@ -1,0 +1,725 @@
+2026-07-01 14:27:24 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 14:27:30 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 14:27:30 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:27:30 | DEBUG    | __init__:1564 | interactive is False
+2026-07-01 14:27:30 | DEBUG    | __init__:1565 | platform is win32
+2026-07-01 14:27:30 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:27:30 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-01 14:27:34 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 14:27:34 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 14:27:34 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 14:27:34 | INFO     | loader:156 | Loading faiss.
+2026-07-01 14:27:34 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 14:27:34 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 14:27:38 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 14:27:38 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:27:38 | DEBUG    | __init__:1564 | interactive is False
+2026-07-01 14:27:38 | DEBUG    | __init__:1565 | platform is win32
+2026-07-01 14:27:38 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:27:38 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-01 14:27:41 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 14:27:41 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 14:27:41 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 14:27:41 | INFO     | loader:156 | Loading faiss.
+2026-07-01 14:27:41 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 14:27:42 | INFO     | main:63 | 
+=======================================================
+2026-07-01 14:27:42 | INFO     | main:64 | 🤖 WORKER YOLO AI ĐÃ SẴN SÀNG - ĐANG CHỜ MASTER GIAO VIỆC
+2026-07-01 14:27:42 | INFO     | main:65 | =======================================================
+
+2026-07-01 14:27:42 | DEBUG    | proactor_events:634 | Using proactor: IocpProactor
+2026-07-01 14:27:43 | INFO     | heartbeat_service:68 | 💓 [Heartbeat Service] Đã kích hoạt máy đo nhịp tim chạy ngầm...
+2026-07-01 14:27:44 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 27.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 14:27:44 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:27:44 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:27:50 | DEBUG    | cameras_router:55 | 
+🛑 Nhận lệnh Sync từ Master! Đang dọn dẹp 0 luồng YOLO cũ...
+2026-07-01 14:27:50 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 18.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 14:27:50 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:27:50 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:27:52 | DEBUG    | cameras_router:85 | ✅ [OK] Camera cam_001 - Luồng hình ảnh ổn định.
+2026-07-01 14:27:53 | DEBUG    | cameras_router:85 | ✅ [OK] Camera cam_002 - Luồng hình ảnh ổn định.
+2026-07-01 14:27:53 | INFO     | cameras_router:106 | 📊 [CHIA LÔ] Tổng: 2 Cam. Số YOLO gánh: 2 Process. Mỗi YOLO gánh: 1 Cam.
+2026-07-01 14:27:53 | DEBUG    | cameras_router:30 | 🚀 BẮT ĐẦU CHIA LÔ CHO 2 CAMERA (Tối ưu: 1 Cam/1 YOLO) 🚀
+2026-07-01 14:27:53 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 14:27:57 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 14:27:57 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:27:57 | DEBUG    | __init__:1564 | interactive is False
+2026-07-01 14:27:57 | DEBUG    | __init__:1565 | platform is win32
+2026-07-01 14:27:57 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:27:57 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-01 14:27:57 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 29.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 14:27:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:27:57 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:28:00 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 14:28:00 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 14:28:00 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 14:28:00 | INFO     | loader:156 | Loading faiss.
+2026-07-01 14:28:00 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 14:28:00 | INFO     | yolo_service:64 | ⚙️ [YOLO SỐ 1] TIẾP NHẬN LÔ...
+2026-07-01 14:28:01 | INFO     | yolo_service:78 | 🚀 [YOLO 1] Đang mở luồng cam_001...
+2026-07-01 14:28:01 | INFO     | yolo_service:86 | 🚀 [ZMQ] Camera cam_001 đã cầm súng, nhắm thẳng Master tại tcp://10.40.91.11:5558
+2026-07-01 14:28:02 | INFO     | yolo_service:110 | 🎥 [START] YOLO bắt đầu ăn VRAM và quét frame cho cam_001...
+2026-07-01 14:28:03 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 31.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.78, 'max_cam': 2}
+2026-07-01 14:28:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:28:03 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:28:08 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 14:28:09 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 33.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.73, 'max_cam': 2}
+2026-07-01 14:28:09 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:28:09 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:28:14 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 14:28:14 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:28:14 | DEBUG    | __init__:1564 | interactive is False
+2026-07-01 14:28:14 | DEBUG    | __init__:1565 | platform is win32
+2026-07-01 14:28:14 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 14:28:14 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-01 14:28:15 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 40.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.73, 'max_cam': 2}
+2026-07-01 14:28:16 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:28:16 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:28:21 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 14:28:21 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 14:28:21 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 14:28:21 | INFO     | loader:156 | Loading faiss.
+2026-07-01 14:28:21 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 14:28:22 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 42.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.73, 'max_cam': 2}
+2026-07-01 14:28:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:28:22 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:28:22 | INFO     | yolo_service:64 | ⚙️ [YOLO SỐ 2] TIẾP NHẬN LÔ...
+2026-07-01 14:28:22 | INFO     | yolo_service:78 | 🚀 [YOLO 2] Đang mở luồng cam_002...
+2026-07-01 14:28:22 | INFO     | yolo_service:86 | 🚀 [ZMQ] Camera cam_002 đã cầm súng, nhắm thẳng Master tại tcp://10.40.91.11:5558
+2026-07-01 14:28:23 | INFO     | yolo_service:110 | 🎥 [START] YOLO bắt đầu ăn VRAM và quét frame cho cam_002...
+2026-07-01 14:28:28 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 79.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.58, 'max_cam': 2}
+2026-07-01 14:28:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:28:28 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:28:34 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.54, 'max_cam': 2}
+2026-07-01 14:28:34 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:28:34 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:28:40 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.54, 'max_cam': 2}
+2026-07-01 14:28:40 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:28:40 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:28:46 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.54, 'max_cam': 2}
+2026-07-01 14:28:46 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:28:46 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:28:52 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.54, 'max_cam': 2}
+2026-07-01 14:28:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:28:52 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:28:58 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.54, 'max_cam': 2}
+2026-07-01 14:28:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:28:58 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:29:05 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.54, 'max_cam': 2}
+2026-07-01 14:29:05 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:29:05 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:29:11 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 51.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.54, 'max_cam': 2}
+2026-07-01 14:29:11 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:29:11 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:29:17 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 55.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:29:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:29:17 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:29:23 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:29:23 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:29:23 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:29:29 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:29:29 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:29:29 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:29:35 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:29:35 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:29:35 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:29:41 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:29:41 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:29:41 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:29:47 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:29:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:29:47 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:29:53 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:29:53 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:29:54 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:30:00 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:30:00 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:30:00 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:30:06 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 41.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:30:06 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:30:06 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:30:12 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 59.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:30:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:30:12 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:30:18 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 59.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:30:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:30:18 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:30:24 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 53.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:30:24 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:30:24 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:30:30 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 53.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:30:30 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:30:30 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:30:36 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 51.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:30:36 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:30:36 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:30:42 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 59.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:30:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:30:42 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:30:48 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 53.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:30:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:30:48 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:30:55 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 67.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:30:55 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:30:55 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:31:01 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 67.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:31:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:31:01 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:31:07 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 62.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:31:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:31:07 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:31:13 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 54.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:31:13 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:31:13 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:31:19 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 51.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:31:19 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:31:19 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:31:25 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 69.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:31:25 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:31:25 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:31:31 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 61.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:31:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:31:31 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:31:37 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 60.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:31:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:31:37 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:31:43 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 54.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:31:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:31:43 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:31:49 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 51.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:31:49 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:31:49 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:31:56 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 57.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:31:56 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:31:56 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:32:02 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:32:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:32:02 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:32:08 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:32:08 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:32:08 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:32:14 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 50.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:32:14 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:32:14 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:32:20 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 60.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:32:20 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:32:20 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:32:26 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 77.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:32:26 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:32:26 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:32:32 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 56.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:32:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:32:32 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:32:38 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 61.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:32:38 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:32:38 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:32:44 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:32:44 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:32:44 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:32:50 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:32:50 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:32:50 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:32:56 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:32:56 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:32:57 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:33:03 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 40.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:33:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:33:03 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:33:09 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:33:09 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:33:09 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:33:15 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:33:15 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:33:15 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:33:21 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:33:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:33:21 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:33:27 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:33:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:33:27 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:33:33 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:33:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:33:33 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:33:39 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:33:39 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:33:39 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:33:45 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:33:45 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:33:45 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:33:51 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:33:51 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:33:51 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:33:58 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:33:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:33:58 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:34:04 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:34:04 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:34:04 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:34:10 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:34:10 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:34:10 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:34:16 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:34:16 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:34:16 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:34:22 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 31.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:34:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:34:22 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:34:28 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:34:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:34:28 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:34:34 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:34:34 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:34:34 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:34:40 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:34:40 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:34:40 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:34:46 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:34:46 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:34:46 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:34:52 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 39.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:34:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:34:53 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:34:59 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:34:59 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:34:59 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:35:05 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:35:05 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:35:05 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:35:11 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 42.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:35:11 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:35:11 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:35:17 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 40.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:35:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:35:17 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:35:23 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:35:23 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:35:23 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:35:29 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:35:29 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:35:29 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:35:35 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:35:35 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:35:35 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:35:41 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 50.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:35:41 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:35:41 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:35:47 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 41.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:35:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:35:48 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:35:54 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:35:54 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:35:54 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:36:00 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 40.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:36:00 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:36:00 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:36:06 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 41.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:36:06 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:36:06 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:36:12 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 37.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:36:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:36:12 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:36:18 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 33.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:36:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:36:18 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:36:24 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 40.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:36:24 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:36:24 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:36:30 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 34.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:36:30 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:36:30 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:36:36 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 37.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:36:36 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:36:36 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:36:42 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 54.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:36:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:36:42 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:36:48 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 64.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:36:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:36:49 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:36:55 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 59.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:36:55 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:36:55 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:37:01 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 72.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:37:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:37:01 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:37:07 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 44.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:37:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:37:07 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:37:13 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:37:13 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:37:13 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:37:19 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 44.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:37:19 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:37:19 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:37:25 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:37:25 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:37:25 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:37:31 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:37:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:37:31 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:37:37 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:37:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:37:37 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:37:44 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:37:44 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:37:44 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:37:50 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:37:50 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:37:50 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:37:56 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:37:56 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:37:56 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:38:02 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 40.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:38:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:38:02 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:38:08 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:38:08 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:38:08 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:38:14 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:38:14 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:38:14 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:38:20 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 54.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:38:20 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:38:20 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:38:26 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 53.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:38:26 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:38:26 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:38:32 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:38:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:38:32 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:38:39 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 51.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:38:39 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:38:39 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:38:45 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:38:45 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:38:45 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:38:51 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:38:51 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:38:51 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:38:57 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:38:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:38:57 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:39:03 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:39:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:39:03 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:39:09 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:39:09 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:39:09 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:39:15 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:39:15 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:39:15 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:39:21 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 44.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:39:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:39:21 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:39:28 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:39:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:39:28 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:39:34 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:39:34 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:39:34 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:39:40 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 56.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:39:40 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:39:40 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:39:46 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 59.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:39:46 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:39:46 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:39:52 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:39:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:39:52 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:39:58 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 53.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:39:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:39:58 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:40:04 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 54.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:40:04 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:40:04 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:40:10 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:40:10 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:40:10 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:40:16 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 71.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:40:16 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:40:16 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:40:22 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 50.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:40:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:40:22 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:40:29 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 50.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:40:29 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:40:29 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:40:35 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:40:35 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:40:35 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:40:41 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:40:41 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:40:41 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:40:47 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:40:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:40:47 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:40:53 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:40:53 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:40:53 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:40:59 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:40:59 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:40:59 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:41:05 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:41:05 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:41:05 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:41:11 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:41:11 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:41:11 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:41:18 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 44.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:41:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:41:18 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:41:24 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:41:24 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:41:24 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:41:30 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:41:30 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:41:30 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:41:36 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:41:36 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:41:36 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:41:42 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 41.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:41:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:41:42 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:41:48 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:41:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:41:48 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:41:54 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:41:54 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:41:54 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:42:00 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 44.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:42:00 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:42:00 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:42:06 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:42:06 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:42:06 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:42:12 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:42:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:42:13 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:42:19 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:42:19 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:42:19 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:42:25 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:42:25 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:42:25 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:42:31 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:42:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:42:31 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:42:37 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:42:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:42:37 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:42:43 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:42:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:42:43 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:42:49 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:42:49 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:42:49 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:42:55 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:42:55 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:42:55 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:43:01 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:43:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:43:01 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:43:08 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:43:08 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:43:08 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:43:14 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 44.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:43:14 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:43:14 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:43:20 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:43:20 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:43:20 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:43:26 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 68.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:43:26 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:43:26 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:43:32 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 55.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:43:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:43:32 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:43:38 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:43:38 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:43:38 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:43:44 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 54.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:43:44 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:43:44 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:43:50 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:43:50 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:43:50 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:43:57 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:43:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:43:57 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:44:03 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 38.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:44:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:44:03 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:44:09 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 41.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:44:09 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:44:09 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:44:15 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:44:15 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:44:15 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:44:21 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 42.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:44:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:44:21 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:44:27 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:44:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:44:27 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:44:33 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:44:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:44:33 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:44:35 | INFO     | gallery:165 | UNNAMED EMBEDDING EVICTED: global_id=3
+2026-07-01 14:44:39 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 51.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:44:39 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:44:39 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:44:45 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 51.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:44:45 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:44:46 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:44:52 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:44:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:44:52 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:44:58 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:44:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:44:58 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:45:04 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 44.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:45:04 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:45:04 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:45:10 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:45:10 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:45:10 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:45:16 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 40.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:45:16 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:45:16 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:45:22 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:45:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:45:22 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:45:28 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:45:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:45:28 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:45:34 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:45:34 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:45:34 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:45:41 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 49.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:45:41 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:45:41 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:45:47 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:45:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:45:47 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:45:53 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 59.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:45:53 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:45:53 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:45:59 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 32.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:45:59 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:45:59 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:46:05 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 38.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:46:05 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:46:05 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:46:11 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 66.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:46:11 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:46:11 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:46:17 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 54.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:46:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:46:17 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:46:23 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:46:23 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:46:23 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:46:29 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 37.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:46:29 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:46:29 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:46:36 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:46:36 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:46:36 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:46:42 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 44.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:46:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:46:42 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:46:48 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 42.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:46:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:46:48 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:46:54 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 40.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:46:54 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:46:54 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:47:00 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 38.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:47:00 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:47:00 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:47:06 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:47:06 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:47:06 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:47:12 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:47:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:47:12 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:47:18 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 46.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:47:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:47:18 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:47:24 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 52.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:47:24 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:47:24 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:47:31 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 42.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:47:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:47:31 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:47:37 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 47.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:47:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:47:37 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:47:43 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 41.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:47:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:47:43 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:47:49 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:47:49 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:47:49 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:47:55 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 33.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:47:55 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:47:55 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:48:01 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 33.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:48:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:48:01 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:48:07 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 32.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:48:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:48:07 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:48:13 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:48:13 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:48:13 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:48:19 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:48:19 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:48:19 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:48:25 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 54.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:48:25 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:48:26 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:48:32 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 39.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:48:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:48:32 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:48:38 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 38.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:48:38 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:48:38 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:48:44 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 45.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:48:44 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:48:44 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:48:50 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:48:50 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:48:50 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:48:56 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 42.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:48:56 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:48:56 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:49:02 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 71.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:49:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:49:02 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:49:08 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 35.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:49:08 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:49:08 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:49:14 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 50.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:49:14 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:49:14 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:49:21 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 48.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:49:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:49:21 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:49:27 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 43.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:49:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:49:27 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:49:33 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 54.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.49, 'max_cam': 2}
+2026-07-01 14:49:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:49:33 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-01 14:49:34 | INFO     | main:41 | 
+🛑 Server YOLO đang tắt máy! Đang báo cáo về Master để xả Camera...
+2026-07-01 14:49:34 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-01 14:49:34 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/servers/offline HTTP/1.1" 200 85
+2026-07-01 14:49:34 | DEBUG    | main:46 | ✅ Đã bàn giao lại toàn bộ Camera cho Master thành công!
+

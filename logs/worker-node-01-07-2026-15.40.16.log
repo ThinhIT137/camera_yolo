@@ -1,0 +1,22 @@
+2026-07-01 15:40:16 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 15:40:26 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-01 15:40:26 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-01 15:40:26 | DEBUG    | __init__:1564 | interactive is False
+2026-07-01 15:40:26 | DEBUG    | __init__:1565 | platform is win32
+2026-07-01 15:40:26 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-01 15:40:26 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-01 15:40:33 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-01 15:40:33 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-01 15:40:33 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-01 15:40:33 | INFO     | loader:156 | Loading faiss.
+2026-07-01 15:40:33 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-01 15:40:34 | CRITICAL | logger_utils:63 | 🚨 [HỆ THỐNG SẬP NGUỒN ĐỘT NGỘT] Lỗi chưa được xử lý:
+Traceback (most recent call last):
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\main.py", line 25, in <module>
+    from service.yolo_service import calculate_optimal_chunk_size
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\service\yolo_service.py", line 21, in <module>
+    from service.tracker import CameraTracker
+  File "E:\FullStack_developer\projects\camera\Backend\camera_jolo\service\tracker.py", line 5, in <module>
+    from gallery import ReIDGallery
+ModuleNotFoundError: No module named 'gallery'

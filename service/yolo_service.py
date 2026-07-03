@@ -10,9 +10,11 @@ import subprocess
 import numpy as np
 import json
 import os
+import torchreid
 # from service.rtsp_service import check_rtsp_alive, ReconnectWatcher
 import queue
 import multiprocessing
+import onnxruntime as ort
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 from multiprocessing import Process, Queue, Manager
@@ -60,19 +62,70 @@ def zmq_listener(tracker_app):
                 tracker_app.pending_targets.append(msg["name"])
         except Exception: pass
 
+def export_osnet_to_onnx(
+    weights_path="osnet_x1_0_msmt17.pth", 
+    onnx_path="osnet_x1_0.onnx"
+):
+    print(f"Building OSNet model...")
+    model = torchreid.models.build_model(
+        name="osnet_x1_0", num_classes=1000, pretrained=False
+    )
+    
+    if os.path.exists(weights_path):
+        print(f"Loading weights from {weights_path}...")
+        torchreid.utils.load_pretrained_weights(model, weights_path)
+    else:
+        print(f"WARNING: Weights file {weights_path} not found. Using random weights!")
+
+    model.eval()
+    
+    # Dummy input with batch_size=1
+    # OSNet expects input shape (B, 3, 256, 128)
+    dummy_input = torch.randn(1, 3, 256, 128)
+    
+    print(f"Exporting model to {onnx_path}...")
+    torch.onnx.export(
+        model, 
+        dummy_input, 
+        onnx_path, 
+        export_params=True,
+        opset_version=12,
+        do_constant_folding=True,
+        input_names=["input"],
+        output_names=["output"],
+        dynamic_axes={
+            "input": {0: "batch_size"},
+            "output": {0: "batch_size"}
+        }
+    )
+    print(f"Export complete. You can now use {onnx_path} with ONNXRuntime.")
+
 def ai_worker_process(chunk_id, cameras_chunk, out_queue, cmd_queue, shared_stats):
     logger.info(f"⚙️ [YOLO SỐ {chunk_id}] TIẾP NHẬN LÔ...")
     try:
         device = "cuda:0" if torch.cuda.is_available() else "cpu"
-        gallery = ReIDGallery(reid_weights="osnet_x1_0_msmt17.pth")
 
-        if hasattr(gallery, 'reid_model') and "cuda" in device:
-            gallery.reid_model = gallery.reid_model.cuda()
+        onnx_path = "osnet_x1_0.onnx"
+        pth_path = "osnet_x1_0_msmt17.pth"
+
+        if not os.path.exists(onnx_path):
+            export_osnet_to_onnx(weights_path=pth_path, onnx_path=onnx_path)
+
+        gallery = ReIDGallery(reid_weights=pth_path)
+
+        if "cuda" in device:
+            # CHỈ để CUDA, tuyệt đối không cho TensorRT hay CPU vào đây để tránh fallback
+            providers = ['CUDAExecutionProvider'] 
+        else:
+            providers = ['CPUExecutionProvider']
+            
+        logger.info(f"🚀 Đang nạp model ReID vào {providers[0]}...")
+        gallery.reid_model = ort.InferenceSession(onnx_path, providers=providers)
+
             
         active_trackers = {} # Từ điển chứa các Object Camera đang chạy
         active_threads = {}
 
-        # Viết hàm bật 1 con camera gọn lại để xài lại nhiều lần
         # Viết hàm bật 1 con camera gọn lại để xài lại nhiều lần
         def start_single_camera(cam_id, stream_url):
             logger.info(f"🚀 [YOLO {chunk_id}] Đang mở luồng {cam_id}...")
@@ -90,9 +143,10 @@ def ai_worker_process(chunk_id, cameras_chunk, out_queue, cmd_queue, shared_stat
                     door_poly = np.array([[0, 0], [1920, 0], [1920, 1080], [0, 1080]], dtype=np.int32)
                     
                     # Chuyển khởi tạo YOLO vào trong luồng để GPU không bị tranh chấp (CUDA Context)
-                    yolo_model = YOLO("yolo11n.pt", task="detect")
+                    yolo_model = YOLO("yolo11n.engine", task="detect")
+                    # yolo_model = get_optimized_model("yolo11n.pt")
                     time.sleep(1) 
-                    yolo_model.to(device)
+                    # yolo_model.to(device)
                     
                     tracker_instance = CameraTracker(
                         cam_id=cam_id, source_url=stream_url, gallery=gallery,
@@ -111,6 +165,7 @@ def ai_worker_process(chunk_id, cameras_chunk, out_queue, cmd_queue, shared_stat
                     cnt = 0
 
                     # ✅ CÚ CHỐT: Bắt buộc phải dùng vòng lặp FOR để hàm có yield thực sự chạy
+                    start_time = time.time()
                     for frame, detections in tracker_instance.track_loop():
                         # Lặp qua đây thì code trong track_loop mới được thực thi!
                         orig_h, orig_w = frame.shape[:2]
@@ -133,14 +188,16 @@ def ai_worker_process(chunk_id, cameras_chunk, out_queue, cmd_queue, shared_stat
                             data_payload = {
                                 "server_id": SERVER_ID,
                                 "cam_id": cam_id,
-                                "boxes": boxes_to_send
+                                "boxes": boxes_to_send,
+                                "timestamp": start_time
                             }
                             # print(data_payload) # Mở comment cái này ra là thấy nó in data chạy nhòe màn hình luôn
-                            
                             zmq_socket.send_json(data_payload, zmq.NOBLOCK)
                         except zmq.error.Again:
                             pass # Chống lag mạng
-
+                        duration = time.time() - start_time
+                        logger.debug(f"[{cam_id}] Thời gian xử lý frame {(duration*1000):.2f}ms")
+                        start_time = time.time()
                         # # Bắn data vào Queue để trạm trung chuyển bơm ra WebSocket
                         # if tracker_instance.out_queue is not None:
                         #     try:
