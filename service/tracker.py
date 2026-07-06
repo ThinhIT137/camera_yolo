@@ -344,30 +344,4 @@ class CameraTracker:
                             "base_point": base_point,
                             "name": display_name,
                         })
-
-            #             color_idx = global_id % len(self.COLOR_PALETTE)
-            #             box_color = tuple(int(c) for c in self.COLOR_PALETTE[color_idx])
-
-            #             cv2.rectangle(frame, (box[0], box[1]), (box[2], box[3]), box_color, 3)
-            #             label = f"TRACKING: {display_name}"
-            #             (tw, th), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)
-            #             cv2.rectangle(frame, (box[0], box[1] - th - 10), (box[0] + tw, box[1]), box_color, -1)
-            #             cv2.putText(frame, label, (box[0], box[1] - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2) 
-            #         else:
-            #             prov_color = (160, 160, 160)
-            #             cv2.rectangle(frame, (box[0], box[1]), (box[2], box[3]), prov_color, 2)
-            #             label = f"Detecting (track {track_id})"
-            #             (tw, th), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2)
-            #             cv2.rectangle(frame, (box[0], box[1] - th - 10), (box[0] + tw, box[1]), prov_color, -1)
-            #             cv2.putText(frame, label, (box[0], box[1] - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)                       
-            # rx1, ry1, rx2, ry2 = self.ROI
-            # cv2.rectangle(frame, (rx1, ry1), (rx2, ry2), (255, 255, 0), 2)
-            # cv2.putText(frame, "TRACK ZONE", (rx1, ry1 - 10),
-            #             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 0), 2)
-
-            # cv2.polylines(frame, [self.DOOR_POLYGON], True, (0, 0, 255), 2)
-            # cx = int(np.mean(self.DOOR_POLYGON[:, 0]))
-            # cv2.putText(frame, "DOOR ZONE", (cx, 15),
-            #             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
-
             yield frame, current_detections

@@ -3,6 +3,8 @@ import logging
 logger = logging.getLogger(__name__)
 
 import os
+os.environ["CUDA_MODULE_LOADING"] = "LAZY" 
+os.environ["YOLO_DISABLE_PROFILING"] = "1"
 import json
 import time
 import concurrent.futures

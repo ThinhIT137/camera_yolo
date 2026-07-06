@@ -1,0 +1,42 @@
+2026-07-03 10:45:54 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-03 10:46:10 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-03 10:46:10 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-03 10:46:10 | DEBUG    | __init__:1564 | interactive is False
+2026-07-03 10:46:10 | DEBUG    | __init__:1565 | platform is win32
+2026-07-03 10:46:10 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-03 10:46:10 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-03 10:46:11 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-03 10:46:11 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-03 10:46:11 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-03 10:46:11 | INFO     | loader:156 | Loading faiss.
+2026-07-03 10:46:11 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-03 10:46:12 | INFO     | main:3 | 🎬 [WORKER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-03 10:46:23 | DEBUG    | __init__:347 | matplotlib data path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\matplotlib\mpl-data
+2026-07-03 10:46:23 | DEBUG    | __init__:347 | CONFIGDIR=C:\Users\Admin\.matplotlib
+2026-07-03 10:46:23 | DEBUG    | __init__:1564 | interactive is False
+2026-07-03 10:46:23 | DEBUG    | __init__:1565 | platform is win32
+2026-07-03 10:46:23 | DEBUG    | __init__:347 | CACHEDIR=C:\Users\Admin\.matplotlib
+2026-07-03 10:46:23 | DEBUG    | font_manager:1843 | Using fontManager instance from C:\Users\Admin\.matplotlib\fontlist-v3.11.0.json
+2026-07-03 10:46:24 | DEBUG    | loader:96 | Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2026-07-03 10:46:24 | INFO     | loader:132 | Loading faiss with AVX2 support.
+2026-07-03 10:46:24 | INFO     | loader:137 | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-07-03 10:46:24 | INFO     | loader:156 | Loading faiss.
+2026-07-03 10:46:24 | INFO     | loader:158 | Successfully loaded faiss.
+2026-07-03 10:46:26 | INFO     | main:63 | 
+=======================================================
+2026-07-03 10:46:26 | INFO     | main:64 | 🤖 WORKER YOLO AI ĐÃ SẴN SÀNG - ĐANG CHỜ MASTER GIAO VIỆC
+2026-07-03 10:46:26 | INFO     | main:65 | =======================================================
+
+2026-07-03 10:46:26 | DEBUG    | proactor_events:634 | Using proactor: IocpProactor
+2026-07-03 10:46:26 | INFO     | heartbeat_service:68 | 💓 [Heartbeat Service] Đã kích hoạt máy đo nhịp tim chạy ngầm...
+2026-07-03 10:46:27 | DEBUG    | heartbeat_service:58 | 💓 Nhịp tim gửi Master: {'server_id': 'SV_004', 'cpu_usage': 63.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-03 10:46:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-03 10:46:27 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/heartbeat HTTP/1.1" 200 68
+2026-07-03 10:46:28 | INFO     | main:41 | 
+🛑 Server YOLO đang tắt máy! Đang báo cáo về Master để xả Camera...
+2026-07-03 10:46:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:5000
+2026-07-03 10:46:28 | DEBUG    | connectionpool:544 | http://10.40.91.11:5000 "POST /api/servers/offline HTTP/1.1" 200 85
+2026-07-03 10:46:28 | DEBUG    | main:46 | ✅ Đã bàn giao lại toàn bộ Camera cho Master thành công!
+
