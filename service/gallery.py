@@ -150,7 +150,14 @@ class ReIDGallery:
     # FAISS match / register / update
     # ------------------------------------------------------------------
 
-    def match_or_register(self, emb: np.ndarray) -> tuple[int, bool]:
+    def match_or_register(self, emb: np.ndarray, exclude: set[int] | None = None) -> tuple[int, bool]:
+        """
+        exclude: global_ids to skip (e.g. already assigned to another track_id
+        in the same frame). If the top match is excluded, we fall back to the
+        next best candidate above threshold, or register a brand new identity —
+        instead of the caller silently colliding two tracks onto one gid.
+        """
+        exclude = exclude or set()
         with self.lock:
             if self.index.ntotal == 0:
                 gid = self.next_global_id
@@ -165,7 +172,7 @@ class ReIDGallery:
 
             candidates: dict[int, list[float]] = {}
             for sim, gid in zip(D[0], I[0]):
-                if gid != -1 and sim > self.SIM_THRESHOLD:
+                if gid != -1 and sim > self.SIM_THRESHOLD and int(gid) not in exclude:
                     candidates.setdefault(int(gid), []).append(sim)
 
             if candidates:
