@@ -27,6 +27,7 @@ class CameraTracker:
         face_detector=None,
         face_recognizer=None,
         face_recognition_interval: int = 15,
+        reid_update_interval: int = 10,
     ):
         self.cam_id = cam_id
         self.source_url = source_url
@@ -42,6 +43,11 @@ class CameraTracker:
         self.ROI_ENTRY_STABILITY = roi_entry_stability
         self.IMGSZ = imgsz
         self.CONF = conf
+        # Only re-run OSNet on an already-linked track every N frames instead
+        # of every frame — cuts GPU load a lot and removes the frame-drop /
+        # choppy-render effect that looked like flickering boxes.
+        self.REID_UPDATE_INTERVAL = reid_update_interval
+        self._last_embed_frame: dict[int, int] = {}
 
         # Face detection + recognition (optional, per-camera)
         self.face_detector = face_detector
@@ -104,6 +110,7 @@ class CameraTracker:
               self._face_cooldown.pop(gid, None)
             self.track_history.pop(t_id, None)
             self.track_last_seen.pop(t_id, None)
+            self._last_embed_frame.pop(t_id, None)
 
         evicted = self.gallery.evict_unnamed()
         for gid in evicted:
@@ -113,6 +120,7 @@ class CameraTracker:
                 self.track_history.pop(t, None)
                 self.track_last_seen.pop(t, None)
                 self.track_last_position.pop(t, None)
+                self._last_embed_frame.pop(t, None)
 
     # ------------------------------------------------------------------
     # Main tracking loop
@@ -157,7 +165,9 @@ class CameraTracker:
 
                     need_reid = False
                     if track_id in self.trackid_to_global:
-                        need_reid = True
+                        last_embed = self._last_embed_frame.get(track_id, -10**9)
+                        if self.frame_idx - last_embed >= self.REID_UPDATE_INTERVAL:
+                            need_reid = True
                     else:
                         is_occluded = any(
                             not np.array_equal(box, other.astype(int))
@@ -196,6 +206,7 @@ class CameraTracker:
                             emb /= np.linalg.norm(emb) + 1e-6
                             self.gallery.update_embedding(global_id, emb)
                             self.gallery.mark_seen(global_id)
+                            self._last_embed_frame[track_id] = self.frame_idx
                     else:
                         is_occluded = any(
                             not np.array_equal(box, other.astype(int))
@@ -205,12 +216,15 @@ class CameraTracker:
                         if not is_occluded and self.track_history.get(track_id, 0) >= self.STABILITY_FRAMES:
                             if emb is not None:
                                 emb /= np.linalg.norm(emb) + 1e-6
-                                best_gid, was_matched = self.gallery.match_or_register(emb)
+                                best_gid, was_matched = self.gallery.match_or_register(
+                                    emb, exclude=set(assigned_in_frame.keys())
+                                )
                                 if was_matched:
                                     self.gallery.update_embedding(best_gid, emb)
                                     self.gallery.mark_seen(best_gid)
                                 self.trackid_to_global[track_id] = best_gid
                                 self.gallery.mark_seen(best_gid)
+                                self._last_embed_frame[track_id] = self.frame_idx
                                 global_id = best_gid
 
                     if global_id is not None:
